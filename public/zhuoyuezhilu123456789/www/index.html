@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<!--
+	作者：hatikoy@163.com
+	时间：2016-06-24
+	描述：首页
+-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			#slider{
+				max-height: 200px;
+				overflow: hidden;
+			}
+			.chart {
+				height: 200px;
+				margin: 0px;
+				padding: 0px;
+				
+			}
+			.chart canvas{
+				background: #FFFFFF;
+			}
+			.mystory{
+				background: #fff;
+			}
+			.mystory h4{
+				color:#63869E;
+				padding-top: 10px;
+				margin-left:20px;
+			}
+			.mystory-pro{
+				width: 30%;
+				background: #fff;
+				border-right: #eee;
+				min-height: 80px;
+				text-align: center;
+				padding-top:15px;
+				float: left;
+			}
+			
+			span.mystory-pro-num{
+				font-size: 24px;
+				color:#63869e;
+				font-weight: 800;
+				text-decoration: underline;
+			}
+			.mystory-sco{
+				width: 70%;
+				background: #fff;
+				border-left: #eee;
+				min-height: 80px;
+				text-align: center;
+				padding-top:15px;
+				float: left;
+			}
+			
+			.index-btn{
+				width: 50%;
+				background: #fff;
+				min-height: 160px;
+				text-align: center;
+				vertical-align: middle;
+				float: left;
+				line-height: 80px;
+			}
+			.index-btn button{
+				color: #fff;
+				border: none;
+				border-radius: 0px;
+				min-height: 80px;
+			}
+			.color01{
+				background: #00bcd4;
+			}
+			.color02{
+				background: #03a9f4;
+			}
+			.color03{
+				background: #88c34a;
+			}
+			.color04{
+				background: #2196f3;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<a class="mui-action-menu mui-icon mui-icon-bars mui-pull-left"></a>
+			<h1 class="mui-title">卓越之路</h1>
+			<button id='market' class=" mui-pull-right mui-btn-link">商场</button>
+		</header>
+		<div class="mui-content">
+			<!--轮播图 -->
+		  <div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/shuijiao.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/muwu.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/cbd.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/shuijiao.jpg">
+					</a>
+				</div>
+			</div>
+			
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div> 
+			
+		<!--Slider end-->
+		
+		<!--我的故事 -->
+			<div class="mui-content-padded mystory" id="mystory">
+				<h4>我的故事</h4>
+				<div class="chart" id="levelChart"></div>
+			</div>
+			
+			<div class="mui-content-padded mystory">
+				<div class="mystory-pro">
+					<span style="color:#333333;font-size: 12px; margin-right: 5px;margin-left: 8px;">现在进行项目</span>
+					<span class="mystory-pro-num">8<span>
+				</div>
+				<div class="mystory-sco">
+					<p style="color:#333333;font-size: 12px;">总共获得经验<span style="color: #88C34A;">20</span></p>
+					<p style="color:#333333;font-size: 12px;">距离升级还有<span style="color: #FF5053;">80经验</span></p>	
+				</div>
+			</div>
+		<!--mystory end-->	
+		
+			<div class="mui-content-padded mystory">
+				<div class="index-btn" style="padding-right: 5px;">
+				<button type="button" class="mui-btn mui-btn-block color01" id='break' >
+					闯关
+				</button>
+				<button type="button" class="mui-btn mui-btn-block color02" id='resources'>
+					资源
+				</button>
+				</div>
+				<div class="index-btn">
+				<button href type="button" class="mui-btn mui-btn-block color03" id="achievement">
+					成就
+				</button>
+				<button type="button" class="mui-btn mui-btn-block color04" id='rules'>
+					规则
+				</button>
+				</div>
+			</div>
+			
+		</div><!--content end-->
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/offcanvas.js"></script>
+		<script src="libs/echarts-all.js"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				
+				var account = doc.getElementById('account');
+				
+				window.addEventListener('show', function() {
+					var state = app.getState();
+					account.innerText = state.account;
+					//alert(state.account);
+				}, false);
+				$.plusReady(function() {
+					var marketPage = $.preload({//商城
+						"id": 'market',
+						"url": 'src_account/market.html'
+					});		
+					var marketButton = doc.getElementById('market');
+ 					//settingButton.style.display = settings.autoLogin ? 'block' : 'none';
+					marketButton.addEventListener('tap', function(event) {
+						$.openWindow({
+							id: 'market',
+							show: {
+								aniShow: 'pop-in'
+							},
+							styles: {
+								popGesture: 'hide'
+							},
+							waiting: {
+								autoShow: false
+							}
+							
+						});
+					});
+
+					//敲击顶部导航，内容区回到顶部
+					document.querySelector('header').addEventListener('doubletap', function() {
+						main.children()[0].evalJS('mui.scrollTo(0, 100)');
+					});
+			
+					$.oldBack = mui.back;
+					var backButtonPress = 0;
+					$.back = function(event) {
+						backButtonPress++;
+						if (backButtonPress > 1) {
+							plus.runtime.quit();
+						} else {
+							plus.nativeUI.toast('再按一次退出应用');
+						}
+						setTimeout(function() {
+							backButtonPress = 0;
+						}, 1000);
+						return false;
+					};
+				});
+				
+				$.plusReady(function() {
+					var projectPage = $.preload({//打开我的故事
+						"id": 'project',
+						"url": 'src_project/projectList.html'
+					});		
+					var projectButton = doc.getElementById('mystory');
+ 					//settingButton.style.display = settings.autoLogin ? 'block' : 'none';
+					projectButton.addEventListener('tap', function(event) {
+						$.openWindow({
+							id: 'project',
+							show: {
+								aniShow: 'pop-in'
+							},
+							styles: {
+								popGesture: 'hide'
+							},
+							waiting: {
+								autoShow: false
+							}
+							
+						});
+					});
+
+					
+				});
+				
+				$.plusReady(function() {
+					var projectPage = $.preload({//打开成就
+						"id": 'achievement',
+						"url": 'src_achievement/achievementPage.html'
+					});		
+					var achievementButton = doc.getElementById('achievement');
+ 					//settingButton.style.display = settings.autoLogin ? 'block' : 'none';
+					achievementButton.addEventListener('tap', function(event) {
+						$.openWindow({
+							id: 'achievement',
+							show: {
+								aniShow: 'pop-in'
+							},
+							styles: {
+								popGesture: 'hide'
+							},
+							waiting: {
+								autoShow: false
+							}
+							
+						});
+					});
+
+					
+				});
+				
+			}(mui, document));
+			
+			/**********
+			 * 图片轮播
+			***********/
+			var slider = mui("#slider");
+			var sliFlag=0;
+			if (sliFlag==0) {
+				slider.slider({
+						interval: 2000
+					});
+			} else {
+				slider.slider({
+						interval: 0
+					});
+			}
+			
+			
+			/**********
+			 * 等级仪表盘
+			***********/
+			//#91c7ae
+			var level=1;
+			var score=120;
+			var myScore=20;
+			var rate=myScore/score;
+			var chartOption = {
+				tooltip:{
+					formatter:"{a} {b}:{c}"
+				},
+				toolbox:{
+					feature:{
+						restore:{},
+						saveAsImage:{}
+					}
+				},
+				series:[
+				{
+					type:'gauge',
+					max:score,
+					radius:90,
+					splitNumber:10,
+					detail:{formatter:level+'级',},
+					axisLine:{
+						lineStyle:{
+							width:10,
+							color:[[rate,'#63869e'],[1,'#eeeeee']]
+						}
+					},
+					axisLable:{
+						show:false
+					},
+					pointer:{
+						length:'90%',
+						width:5,
+					},
+					data:[{value:myScore,name:''}]
+				}
+				]
+			};
+
+			var levelChart = echarts.init(document.getElementById('levelChart'));
+			levelChart.setOption(chartOption);
+			
+			/**********
+			 * 我的故事-项目
+			***********/
+			
+	
+		</script>
+	</body>
+
+</html>
