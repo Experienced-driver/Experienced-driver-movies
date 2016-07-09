@@ -38,14 +38,19 @@
                 <ul id="main-menu" class="nav">
                     <li class="" id="menu-item-1"><a href="#" target="">首页</a></li>
                     <li class="" id="menu-item-2"><a href="#" target="">分类</a></li>
-                    <li class="" id="menu-item-3"><a href="#" target="">其他</a></li></ul>
-
+                    <li class="" id="menu-item-3"><a href="#" target="">榜单</a></li></ul>
+            </div>
+            <div class="pull-right">
+            <form method="post" class="index-search form-inline" action="#">
+                <input type="text" class="in-se-box" placeholder="Search" name="keyword" value="">
+                <input type="submit" class="btn btn-info" value="Search" style="margin:0"></form>
             </div>
         </div>
     </div>
 </div>
 <!--顶部nav结束-->
 <div class="container">
+
     <!--<若用户未注册，则显示此面板>-->
     <div class="jumbotron index-jum">
         <h1>Welcome!</h1>
@@ -61,62 +66,7 @@
 
     </div>
     <!--<若用户已经注册，则此面板消失，显示下一个面板>-->
-
-    <!--<用户注册后会显示的面板>-->
-    <div class="b-l">
-        <h3>个性推荐</h3>
-        <div class="index-mv-tuijian">
-            <li class="col-xs-6 col-md-3">
-                <a href="#" class="index-mv-thumbnail">
-                    <img src="images/file001.jpg" class="img-responsive" alt="..." >
-                    <p>很长的电影名字 <span class="index-score-lable">6.2分</span></p>
-                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
-                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
-                </a>
-            </li>
-            <li class="col-xs-6 col-md-3">
-                <a href="#" class="index-mv-thumbnail">
-                    <img src="images/film002.jpg" class="img-responsive" alt="..." >
-                    <p>很长的电影名字</p>
-                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
-                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
-                </a>
-            </li>
-            <li class="col-xs-6 col-md-3">
-                <a href="#" class="index-mv-thumbnail">
-                    <img src="images/film003.jpg" class="img-responsive" alt="..." >
-                    <p>很长的电影名字</p>
-                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
-                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
-                </a>
-            </li>
-            <li class="col-xs-6 col-md-3">
-                <a href="#" class="index-mv-thumbnail">
-                    <img src="images/film002.jpg" class="img-responsive" alt="..." >
-                    <p>很长的电影名字</p>
-                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
-                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
-                </a>
-            </li>
-        </div>
-    </div>
-    <div class="b-2">
-        <h3>个人中心</h3>
-        <div class="index-self">
-            <img src="images/film004.jpg" class="img-circle img-thumbnail">
-            <p>Username</p>
-            <button class="btn btn-warning">我的收藏</button>
-            <button class="btn btn-warning">个人中心</button>
-            <button class="btn btn-danger">我要反馈</button>
-
-            <form method="post" class="index-search form-inline" action="#">
-                <input type="text" class="in-se-box" placeholder="Search" name="keyword" value="">
-                <input type="submit" class="btn btn-info" value="Search" style="margin:0"></form>
-
-        </div>
-    </div>
-    <!---<用户注册后会显示的面板> 结束-->
-    <div class="b-l">
+    <div class="b-l" id="zhuanti">
         <h3>本周专题</h3>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -155,7 +105,7 @@
             </a>
         </div>
     </div>
-    <div class="b-2">
+    <div class="b-2" id="bangdan">
         <h3>本周榜单</h3>
         <div class="index-bangdan">
             <a><li>树大招风</li></a>
@@ -169,6 +119,57 @@
             <a><li>树大招风</li></a>
         </div>
     </div>
+    <!--<用户注册后会显示的面板>-->
+    <div class="b-l" id="tuijian">
+        <h3>个性推荐</h3>
+        <div class="index-mv-tuijian">
+            <li class="col-xs-6 col-md-3">
+                <a href="#" class="index-mv-thumbnail">
+                    <img src="images/file001.jpg" class="img-responsive" alt="..." >
+                    <p>很长的电影名字 <span class="index-score-lable">6.2分</span></p>
+                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
+                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
+                </a>
+            </li>
+            <li class="col-xs-6 col-md-3">
+                <a href="#" class="index-mv-thumbnail">
+                    <img src="images/film002.jpg" class="img-responsive" alt="..." >
+                    <p>很长的电影名字</p>
+                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
+                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
+                </a>
+            </li>
+            <li class="col-xs-6 col-md-3">
+                <a href="#" class="index-mv-thumbnail">
+                    <img src="images/film003.jpg" class="img-responsive" alt="..." >
+                    <p>很长的电影名字</p>
+                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
+                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
+                </a>
+            </li>
+            <li class="col-xs-6 col-md-3">
+                <a href="#" class="index-mv-thumbnail">
+                    <img src="images/film002.jpg" class="img-responsive" alt="..." >
+                    <p>很长的电影名字</p>
+                    <p class="index-tuijian-fenlei">分类：惊悚/动作/悬疑</p>
+                    <p class="index-tuijian-info">血腥暴力刺激，气氛营造手法一流，但是前面铺垫时间太长。罗泓轸的剧本总是在后半段开始乱套，但结尾有点意思。</p>
+                </a>
+            </li>
+        </div>
+    </div>
+    <div class="b-2" id="self-center">
+        <h3>个人中心</h3>
+        <div class="index-self">
+            <img src="images/film004.jpg" class="img-circle img-thumbnail">
+            <p>Username</p>
+            <button class="btn btn-warning">我的收藏</button>
+            <button class="btn btn-warning">个人中心</button>
+            <button class="btn btn-danger">我要反馈</button>
+
+        </div>
+    </div>
+    <!---<用户注册后会显示的面板> 结束-->
+    <div class="clearfix"></div>
 
 
     <h2>最新上映</h2>
