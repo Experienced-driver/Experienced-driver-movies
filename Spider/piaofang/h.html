@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="猫眼票房分析,猫眼电影,电影票房,实时票房,日票房,预售票房,影片票房趋势,受众画像,实时排片,预售排片,上座率,历史票房" />
+<meta name="description" content="猫眼票房分析，提供最准确的每日电影实时票房、排片、上座率查询，为电影从业者提供最及时、专业的数据分析服务" />
+<meta http-equiv="Cache-Control" CONTENT="no-cache" />
+<meta http-equiv="Pragma" CONTENT="no-cache" />
+<meta http-equiv="cache-control" CONTENT="no-store" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="csrf" content="a52b348ac93f123b1341cffd9bd0f29f6256c710" />
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+<link rel="apple-touch-icon" href="http://ms0.meituan.net/piaofang/img/wx_pic.png" />
+<link rel="icon" type="image/x-icon" href="http://ms0.meituan.net/piaofang/img/favicon.ico" />
+
+<script>
+
+//bfcache
+window.addEventListener('pageshow',function (ev){
+    if (ev.persisted) {
+        window.location.reload();
+    }
+});
+
+//b-log
+var MT=MT||{};MT.TimeTracker={rt:1468202360603,st:Date.now()},window.addEventListener("load",function(){MT.TimeTracker.lt=Date.now()}),document.addEventListener("DOMContentLoaded",function(){MT.TimeTracker.dt=Date.now()}),MT.log={_logs:[],send:function(a,b,c){this._logs.push({type:a,value:b,sampling:c})}};
+
+//frep
+!function(e,t,n){function s(){var e=t.createElement("script");e.async=!0,e.src="//s0.meituan."+(-1===t.location.protocol.indexOf("https")?"net":"com")+"/bs/js/?f=mta-js:mta.min.js";var n=t.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)}if(e.MeituanAnalyticsObject=n,e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},"complete"===t.readyState)s();else{var i="addEventListener",r="attachEvent";if(e[i])e[i]("load",s,!1);else if(e[r])e[r]("onload",s);else{var a=e.onload;e.onload=function(){s(),a&&a()}}}}(window,document,"mta"),function(e,t,n){if(t&&!("_mta"in t)){t._mta=!0;var s=e.location.protocol;if("file:"!==s){var i=e.location.host,r=t.prototype.open;t.prototype.open=function(t,n,a,o,l){if(this._method="string"==typeof t?t.toUpperCase():null,n){if(0===n.indexOf("http://")||0===n.indexOf("https://")||0===n.indexOf("//"))this._url=n;else if(0===n.indexOf("/"))this._url=s+"//"+i+n;else{var h=s+"//"+i+e.location.pathname;h=h.substring(0,h.lastIndexOf("/")+1),this._url=h+n}var u=this._url.indexOf("?");-1!==u?(this._searchLength=this._url.length-1-u,this._url=this._url.substring(0,u)):this._searchLength=0}else this._url=null,this._searchLength=0;return this._startTime=(new Date).getTime(),r.apply(this,arguments)};var a="onreadystatechange",o="addEventListener",l=t.prototype.send;t.prototype.send=function(t){function n(n,i){if(0!==n._url.indexOf(s+"//frep.meituan.net/_.gif")){var r;if(n.response)switch(n.responseType){case"json":r=JSON&&JSON.stringify(n.response).length;break;case"blob":case"moz-blob":r=n.response.size;break;case"arraybuffer":r=n.response.byteLength;case"document":r=n.response.documentElement&&n.response.documentElement.innerHTML&&n.response.documentElement.innerHTML.length+28;break;default:r=n.response.length}e.mta("send","browser.ajax",{url:n._url,method:n._method,error:!(0===n.status.toString().indexOf("2")||304===n.status),responseTime:(new Date).getTime()-n._startTime,requestSize:n._searchLength+(t?t.length:0),responseSize:r||0})}}if(o in this){var i=function(e){n(this,e)};this[o]("load",i),this[o]("error",i),this[o]("abort",i)}else{var r=this[a];this[a]=function(t){r&&r.apply(this,arguments),4===this.readyState&&e.mta&&n(this,t)}}return l.apply(this,arguments)}}}}(window,window.XMLHttpRequest,"mta");
+
+mta("create","556ff0ecda631a2d67484d3b");
+mta("send","page");
+
+//sentry
+/*! Raven.js 1.1.19 (82b9c07) | github.com/getsentry/raven-js */
+!function(a,b){"use strict";function c(a,b){var c,d;b=b||{},a="raven"+a.substr(0,1).toUpperCase()+a.substr(1),document.createEvent?(c=document.createEvent("HTMLEvents"),c.initEvent(a,!0,!0)):(c=document.createEventObject(),c.eventType=a);for(d in b)l(b,d)&&(c[d]=b[d]);if(document.createEvent)document.dispatchEvent(c);else try{document.fireEvent("on"+c.eventType.toLowerCase(),c)}catch(e){}}function d(a){this.name="RavenConfigError",this.message=a}function e(a){var b=W.exec(a),c={},e=7;try{for(;e--;)c[V[e]]=b[e]||""}catch(f){throw new d("Invalid DSN: "+a)}if(c.pass)throw new d("Do not specify your private key in the DSN!");return c}function f(a){return void 0===a}function g(a){return"function"==typeof a}function h(a){return"[object String]"===S.toString.call(a)}function i(a){return"object"==typeof a&&null!==a}function j(a){for(var b in a)return!1;return!0}function k(a){return i(a)&&"[object Error]"===S.toString.call(a)||a instanceof Error}function l(a,b){return S.hasOwnProperty.call(a,b)}function m(a,b){var c,d;if(f(a.length))for(c in a)l(a,c)&&b.call(null,c,a[c]);else if(d=a.length)for(c=0;d>c;c++)b.call(null,c,a[c])}function n(){N="?sentry_version=4&sentry_client=raven-js/"+U.VERSION+"&sentry_key="+L}function o(a,b){var d=[];a.stack&&a.stack.length&&m(a.stack,function(a,b){var c=p(b);c&&d.push(c)}),c("handle",{stackInfo:a,options:b}),r(a.name,a.message,a.url,a.lineno,d,b)}function p(a){if(a.url){var b,c={filename:a.url,lineno:a.line,colno:a.column,"function":a.func||"?"},d=q(a);if(d){var e=["pre_context","context_line","post_context"];for(b=3;b--;)c[e[b]]=d[b]}return c.in_app=!(!Q.includePaths.test(c.filename)||/(Raven|TraceKit)\./.test(c["function"])||/raven\.(min\.)?js$/.test(c.filename)),c}}function q(a){if(a.context&&Q.fetchContext){for(var b=a.context,c=~~(b.length/2),d=b.length,e=!1;d--;)if(b[d].length>300){e=!0;break}if(e){if(f(a.column))return;return[[],b[c].substr(a.column,50),[]]}return[b.slice(0,c),b[c],b.slice(c+1)]}}function r(a,b,c,d,e,f){var g,h;b+="",("Error"!==a||b)&&(Q.ignoreErrors.test(b)||(e&&e.length?(c=e[0].filename||c,e.reverse(),g={frames:e}):c&&(g={frames:[{filename:c,lineno:d,in_app:!0}]}),b=t(b,Q.maxMessageLength),Q.ignoreUrls&&Q.ignoreUrls.test(c)||(!Q.whitelistUrls||Q.whitelistUrls.test(c))&&(h=d?b+" at "+d:b,w(s({exception:{type:a,value:b},stacktrace:g,culprit:c,message:h},f)))))}function s(a,b){return b?(m(b,function(b,c){a[b]=c}),a):a}function t(a,b){return a.length<=b?a:a.substr(0,b)+"鈥�"}function u(){return+new Date}function v(){var a={url:document.location.href,headers:{"User-Agent":navigator.userAgent}};return document.referrer&&(a.headers.Referer=document.referrer),a}function w(a){z()&&(a=s({project:M,logger:Q.logger,platform:"javascript",request:v()},a),a.tags=s(s({},Q.tags),a.tags),a.extra=s(s({},Q.extra),a.extra),a.extra=s({"session:duration":u()-T},a.extra),j(a.tags)&&delete a.tags,K&&(a.user=K),Q.release&&(a.release=Q.release),g(Q.dataCallback)&&(a=Q.dataCallback(a)||a),a&&!j(a)&&(!g(Q.shouldSendCallback)||Q.shouldSendCallback(a))&&(I=a.event_id||(a.event_id=B()),x(a)))}function x(a){var b=y(),d=J+N+"&sentry_data="+encodeURIComponent(JSON.stringify(a));b.crossOrigin="anonymous",b.onload=function(){c("success",{data:a,src:d})},b.onerror=b.onabort=function(){c("failure",{data:a,src:d})},b.src=d}function y(){return document.createElement("img")}function z(){return P?J?!0:(C("error","Error: Raven has not been configured."),!1):!1}function A(a){for(var b,c=[],d=0,e=a.length;e>d;d++)b=a[d],h(b)?c.push(b.replace(/([.*+?^=!:${}()|\[\]\/\\])/g,"\\$1")):b&&b.source&&c.push(b.source);return new RegExp(c.join("|"),"i")}function B(){return"xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0,c="x"==a?b:3&b|8;return c.toString(16)})}function C(b,c){a.console&&console[b]&&U.debug&&console[b](c)}function D(){var b=a.RavenConfig;b&&U.config(b.dsn,b.config).install()}var E={remoteFetching:!1,collectWindowErrors:!0,linesOfContext:7},F=[].slice,G="?";E.wrap=function(a){function b(){try{return a.apply(this,arguments)}catch(b){throw E.report(b),b}}return b},E.report=function(){function c(a){h(),o.push(a)}function d(a){for(var b=o.length-1;b>=0;--b)o[b]===a&&o.splice(b,1)}function e(){i(),o=[]}function f(a,b){var c=null;if(!b||E.collectWindowErrors){for(var d in o)if(l(o,d))try{o[d].apply(null,[a].concat(F.call(arguments,2)))}catch(e){c=e}if(c)throw c}}function g(a,b,c,d,e){var g=null;if(r)E.computeStackTrace.augmentStackTraceWithInitialElement(r,b,c,a),j();else if(e)g=E.computeStackTrace(e),f(g,!0);else{var h={url:b,line:c,column:d};h.func=E.computeStackTrace.guessFunctionName(h.url,h.line),h.context=E.computeStackTrace.gatherContext(h.url,h.line),g={message:a,url:document.location.href,stack:[h]},f(g,!0)}return m?m.apply(this,arguments):!1}function h(){n||(m=a.onerror,a.onerror=g,n=!0)}function i(){n&&(a.onerror=m,n=!1,m=b)}function j(){var a=r,b=p;p=null,r=null,q=null,f.apply(null,[a,!1].concat(b))}function k(b,c){var d=F.call(arguments,1);if(r){if(q===b)return;j()}var e=E.computeStackTrace(b);if(r=e,q=b,p=d,a.setTimeout(function(){q===b&&j()},e.incomplete?2e3:0),c!==!1)throw b}var m,n,o=[],p=null,q=null,r=null;return k.subscribe=c,k.unsubscribe=d,k.uninstall=e,k}(),E.computeStackTrace=function(){function b(b){if(!E.remoteFetching)return"";try{var c=function(){try{return new a.XMLHttpRequest}catch(b){return new a.ActiveXObject("Microsoft.XMLHTTP")}},d=c();return d.open("GET",b,!1),d.send(""),d.responseText}catch(e){return""}}function c(a){if(!h(a))return[];if(!l(u,a)){var c="";-1!==a.indexOf(document.domain)&&(c=b(a)),u[a]=c?c.split("\n"):[]}return u[a]}function d(a,b){var d,e=/function ([^(]*)\(([^)]*)\)/,g=/['"]?([0-9A-Za-z$_]+)['"]?\s*[:=]\s*(function|eval|new Function)/,h="",i=10,j=c(a);if(!j.length)return G;for(var k=0;i>k;++k)if(h=j[b-k]+h,!f(h)){if(d=g.exec(h))return d[1];if(d=e.exec(h))return d[1]}return G}function e(a,b){var d=c(a);if(!d.length)return null;var e=[],g=Math.floor(E.linesOfContext/2),h=g+E.linesOfContext%2,i=Math.max(0,b-g-1),j=Math.min(d.length,b+h-1);b-=1;for(var k=i;j>k;++k)f(d[k])||e.push(d[k]);return e.length>0?e:null}function g(a){return a.replace(/[\-\[\]{}()*+?.,\\\^$|#]/g,"\\$&")}function i(a){return g(a).replace("<","(?:<|&lt;)").replace(">","(?:>|&gt;)").replace("&","(?:&|&amp;)").replace('"','(?:"|&quot;)').replace(/\s+/g,"\\s+")}function j(a,b){for(var d,e,f=0,g=b.length;g>f;++f)if((d=c(b[f])).length&&(d=d.join("\n"),e=a.exec(d)))return{url:b[f],line:d.substring(0,e.index).split("\n").length,column:e.index-d.lastIndexOf("\n",e.index)-1};return null}function k(a,b,d){var e,f=c(b),h=new RegExp("\\b"+g(a)+"\\b");return d-=1,f&&f.length>d&&(e=h.exec(f[d]))?e.index:null}function m(b){for(var c,d,e,f,h=[a.location.href],k=document.getElementsByTagName("script"),l=""+b,m=/^function(?:\s+([\w$]+))?\s*\(([\w\s,]*)\)\s*\{\s*(\S[\s\S]*\S)\s*\}\s*$/,n=/^function on([\w$]+)\s*\(event\)\s*\{\s*(\S[\s\S]*\S)\s*\}\s*$/,o=0;o<k.length;++o){var p=k[o];p.src&&h.push(p.src)}if(e=m.exec(l)){var q=e[1]?"\\s+"+e[1]:"",r=e[2].split(",").join("\\s*,\\s*");c=g(e[3]).replace(/;$/,";?"),d=new RegExp("function"+q+"\\s*\\(\\s*"+r+"\\s*\\)\\s*{\\s*"+c+"\\s*}")}else d=new RegExp(g(l).replace(/\s+/g,"\\s+"));if(f=j(d,h))return f;if(e=n.exec(l)){var s=e[1];if(c=i(e[2]),d=new RegExp("on"+s+"=[\\'\"]\\s*"+c+"\\s*[\\'\"]","i"),f=j(d,h[0]))return f;if(d=new RegExp(c),f=j(d,h))return f}return null}function n(a){if(!a.stack)return null;for(var b,c,g=/^\s*at (.*?) ?\(?((?:file|https?|chrome-extension):.*?):(\d+)(?::(\d+))?\)?\s*$/i,h=/^\s*(.*?)(?:\((.*?)\))?@((?:file|https?|chrome).*?):(\d+)(?::(\d+))?\s*$/i,i=a.stack.split("\n"),j=[],l=/^(.*) is undefined$/.exec(a.message),m=0,n=i.length;n>m;++m){if(b=h.exec(i[m]))c={url:b[3],func:b[1]||G,args:b[2]?b[2].split(","):"",line:+b[4],column:b[5]?+b[5]:null};else{if(!(b=g.exec(i[m])))continue;c={url:b[2],func:b[1]||G,line:+b[3],column:b[4]?+b[4]:null}}!c.func&&c.line&&(c.func=d(c.url,c.line)),c.line&&(c.context=e(c.url,c.line)),j.push(c)}return j.length?(j[0].line&&!j[0].column&&l?j[0].column=k(l[1],j[0].url,j[0].line):j[0].column||f(a.columnNumber)||(j[0].column=a.columnNumber+1),{name:a.name,message:a.message,url:document.location.href,stack:j}):null}function o(a){for(var b,c=a.stacktrace,f=/ line (\d+), column (\d+) in (?:<anonymous function: ([^>]+)>|([^\)]+))\((.*)\) in (.*):\s*$/i,g=c.split("\n"),h=[],i=0,j=g.length;j>i;i+=2)if(b=f.exec(g[i])){var k={line:+b[1],column:+b[2],func:b[3]||b[4],args:b[5]?b[5].split(","):[],url:b[6]};if(!k.func&&k.line&&(k.func=d(k.url,k.line)),k.line)try{k.context=e(k.url,k.line)}catch(l){}k.context||(k.context=[g[i+1]]),h.push(k)}return h.length?{name:a.name,message:a.message,url:document.location.href,stack:h}:null}function p(b){var f=b.message.split("\n");if(f.length<4)return null;var g,h,k,m,n=/^\s*Line (\d+) of linked script ((?:file|https?)\S+)(?:: in function (\S+))?\s*$/i,o=/^\s*Line (\d+) of inline#(\d+) script in ((?:file|https?)\S+)(?:: in function (\S+))?\s*$/i,p=/^\s*Line (\d+) of function script\s*$/i,q=[],r=document.getElementsByTagName("script"),s=[];for(h in r)l(r,h)&&!r[h].src&&s.push(r[h]);for(h=2,k=f.length;k>h;h+=2){var t=null;if(g=n.exec(f[h]))t={url:g[2],func:g[3],line:+g[1]};else if(g=o.exec(f[h])){t={url:g[3],func:g[4]};var u=+g[1],v=s[g[2]-1];if(v&&(m=c(t.url))){m=m.join("\n");var w=m.indexOf(v.innerText);w>=0&&(t.line=u+m.substring(0,w).split("\n").length)}}else if(g=p.exec(f[h])){var x=a.location.href.replace(/#.*$/,""),y=g[1],z=new RegExp(i(f[h+1]));m=j(z,[x]),t={url:x,line:m?m.line:y,func:""}}if(t){t.func||(t.func=d(t.url,t.line));var A=e(t.url,t.line),B=A?A[Math.floor(A.length/2)]:null;A&&B.replace(/^\s*/,"")===f[h+1].replace(/^\s*/,"")?t.context=A:t.context=[f[h+1]],q.push(t)}}return q.length?{name:b.name,message:f[0],url:document.location.href,stack:q}:null}function q(a,b,c,f){var g={url:b,line:c};if(g.url&&g.line){a.incomplete=!1,g.func||(g.func=d(g.url,g.line)),g.context||(g.context=e(g.url,g.line));var h=/ '([^']+)' /.exec(f);if(h&&(g.column=k(h[1],g.url,g.line)),a.stack.length>0&&a.stack[0].url===g.url){if(a.stack[0].line===g.line)return!1;if(!a.stack[0].line&&a.stack[0].func===g.func)return a.stack[0].line=g.line,a.stack[0].context=g.context,!1}return a.stack.unshift(g),a.partial=!0,!0}return a.incomplete=!0,!1}function r(a,b){for(var c,e,f,g=/function\s+([_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*)?\s*\(/i,h=[],i={},j=!1,l=r.caller;l&&!j;l=l.caller)if(l!==s&&l!==E.report){if(e={url:null,func:G,line:null,column:null},l.name?e.func=l.name:(c=g.exec(l.toString()))&&(e.func=c[1]),f=m(l)){e.url=f.url,e.line=f.line,e.func===G&&(e.func=d(e.url,e.line));var n=/ '([^']+)' /.exec(a.message||a.description);n&&(e.column=k(n[1],f.url,f.line))}i[""+l]?j=!0:i[""+l]=!0,h.push(e)}b&&h.splice(0,b);var o={name:a.name,message:a.message,url:document.location.href,stack:h};return q(o,a.sourceURL||a.fileName,a.line||a.lineNumber,a.message||a.description),o}function s(a,b){var c=null;b=null==b?0:+b;try{if(c=o(a))return c}catch(d){if(t)throw d}try{if(c=n(a))return c}catch(d){if(t)throw d}try{if(c=p(a))return c}catch(d){if(t)throw d}try{if(c=r(a,b+1))return c}catch(d){if(t)throw d}return{}}var t=!1,u={};return s.augmentStackTraceWithInitialElement=q,s.computeStackTraceFromStackProp=n,s.guessFunctionName=d,s.gatherContext=e,s}();var H,I,J,K,L,M,N,O=a.Raven,P=!("object"!=typeof JSON||!JSON.stringify),Q={logger:"javascript",ignoreErrors:[],ignoreUrls:[],whitelistUrls:[],includePaths:[],collectWindowErrors:!0,tags:{},maxMessageLength:100,extra:{}},R=!1,S=Object.prototype,T=u(),U={VERSION:"1.1.19",debug:!0,noConflict:function(){return a.Raven=O,U},config:function(a,b){if(J)return C("error","Error: Raven has already been configured"),U;if(!a)return U;var c=e(a),d=c.path.lastIndexOf("/"),f=c.path.substr(1,d);return b&&m(b,function(a,b){Q[a]=b}),Q.ignoreErrors.push(/^Script error\.?$/),Q.ignoreErrors.push(/^Javascript error: Script error\.? on line 0$/),Q.ignoreErrors=A(Q.ignoreErrors),Q.ignoreUrls=Q.ignoreUrls.length?A(Q.ignoreUrls):!1,Q.whitelistUrls=Q.whitelistUrls.length?A(Q.whitelistUrls):!1,Q.includePaths=A(Q.includePaths),L=c.user,M=c.path.substr(d+1),J="//"+c.host+(c.port?":"+c.port:"")+"/"+f+"api/"+M+"/store/",c.protocol&&(J=c.protocol+":"+J),Q.fetchContext&&(E.remoteFetching=!0),Q.linesOfContext&&(E.linesOfContext=Q.linesOfContext),E.collectWindowErrors=!!Q.collectWindowErrors,n(),U},install:function(){return z()&&!R&&(E.report.subscribe(o),R=!0),U},context:function(a,c,d){return g(a)&&(d=c||[],c=a,a=b),U.wrap(a,c).apply(this,d)},wrap:function(a,c){function d(){for(var b=[],d=arguments.length,e=!a||a&&a.deep!==!1;d--;)b[d]=e?U.wrap(a,arguments[d]):arguments[d];try{return c.apply(this,b)}catch(f){throw U.captureException(f,a),f}}if(f(c)&&!g(a))return a;if(g(a)&&(c=a,a=b),!g(c))return c;if(c.__raven__)return c;for(var e in c)l(c,e)&&(d[e]=c[e]);return d.__raven__=!0,d.__inner__=c,d},uninstall:function(){return E.report.uninstall(),R=!1,U},captureException:function(a,b){if(!k(a))return U.captureMessage(a,b);H=a;try{E.report(a,b)}catch(c){if(a!==c)throw c}return U},captureMessage:function(a,b){return Q.ignoreErrors.test&&Q.ignoreErrors.test(a)?void 0:(w(s({message:a+""},b)),U)},setUserContext:function(a){return K=a,U},setExtraContext:function(a){return Q.extra=a||{},U},setTagsContext:function(a){return Q.tags=a||{},U},setReleaseContext:function(a){return Q.release=a,U},setDataCallback:function(a){return Q.dataCallback=a,U},setShouldSendCallback:function(a){return Q.shouldSendCallback=a,U},lastException:function(){return H},lastEventId:function(){return I},isSetup:function(){return z()}};U.setUser=U.setUserContext;var V="source protocol user pass host port path".split(" "),W=/^(?:(\w+):)?\/\/(\w+)(:\w+)?@([\w\.-]+)(?::(\d+))?(\/.*)/;d.prototype=new Error,d.prototype.constructor=d,D(),"function"==typeof define&&define.amd?(a.Raven=U,define("raven",[],function(){return U})):"object"==typeof module?module.exports=U:"object"==typeof exports?exports=U:a.Raven=U}("undefined"!=typeof window?window:this),function(a,b,c){"use strict";if(c){var d=c.event.add;c.event.add=function(a,e,f,g,h){var i;return f&&f.handler?(i=f.handler,f.handler=b.wrap(f.handler)):(i=f,f=b.wrap(f)),i.guid?f.guid=i.guid:f.guid=i.guid=c.guid++,d.call(this,a,e,f,g,h)};var e=c.fn.ready;c.fn.ready=function(a){return e.call(this,b.wrap(a))};var f=c.ajax;c.ajax=function(a,d){var e,g=["complete","error","success"];for("object"==typeof a&&(d=a,a=void 0),d=d||{};e=g.pop();)c.isFunction(d[e])&&(d[e]=b.wrap(d[e]));try{return f.call(this,a,d)}catch(h){throw b.captureException(h),h}}}}(window,window.Raven,window.jQuery),function(a,b){"use strict";var c=function(c){var d=a[c];a[c]=function(){var a=[].slice.call(arguments),c=a[0];return"function"==typeof c&&(a[0]=b.wrap(c)),d.apply?d.apply(this,a):d(a[0],a[1])}};c("setTimeout"),c("setInterval")}(window,window.Raven);
+
+Raven.config('http://7ca46ff13ccc4bb68f308d890ee47552@sentry7.sankuai.com/81').install();
+
+window.onerror = function() {
+    var errorStr=JSON.stringify(arguments);
+    Raven.captureException(errorStr);
+};
+
+</script>
+<style id="js-nuwa">
+    @font-face {font-family: 'cs';
+        src: url(); /* IE9 */
+        src: url()  format('woff'), /* chrome、firefox */
+             url() format('truetype'); /* 魅族自带浏览器只认ttf */
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="http://ms0.meituan.net/piaofang/css/ticket.78240b6f.css" />
+<title>猫眼专业版</title><script>
+    var calendarDate = {"today":"2016-07-11","resourcePath":"http://ms0.meituan.net/piaofang","selectDate":"2016-07-11","selectMaxDate":"2016-07-26","selectMinDate":"2011-01-01","weekDate":"今天","showPreSale":true,"hasNav":true,"hasBefore":true};
+    var __updateTime = '09:30';
+</script>
+</head>
+<body class="has-bar" data-ymd="2016-07-11">
+<div id="wx_pic" style="display:none;">
+    <img src="http://ms0.meituan.net/piaofang/img/wx_pic.png"/>
+</div>
+<header class="navBar ">
+    <h1 class="nav-header navBarTitle" style="margin-top:8px;"><img id="rank-logo" style="height:.6rem" src="
+            http://ms0.meituan.net/piaofang/img/logo_150717.png
+    " /></h1>
+</header>
+<div class="menus">
+        <a class="active" href="javascript:;">票房</a>
+        <a href="/show">排片</a>
+        <a href="/seat">上座</a>
+        <a href="/store">影库</a>
+        <a href="/company/cinema">影院</a>
+        <a href="/company/invest">影投</a>
+</div>
+    <div class="dateTools hbox">
+        <ul class="flex1">
+            <li class="canTouch m-calendar-pre" data-com="canTouch"><span class="more more-left"></span><span class="pre-text">前一天</span></li>
+        </ul>
+        <ul
+            class="m-calendar",
+            data-com="dateBar,
+                minDate:'2011-01-01',
+                maxDate:'2016-07-26',
+                today: '2016-07-11',
+                selectMinDate:'2011-01-01',
+                selectMaxDate:'2016-07-26',
+                selectDate: '2016-07-11',
+                showPreSale: 'true',
+                dateFmt:'full_day'" >
+
+            <li data-before="日票房" class="flex1 canTosch numDate posRel" datebaritem="">
+                <span showtxt="" class="m-calendar-querydate no-border" rawDate="2016-07-11">2016-07-11 </span>
+            </li>
+        </ul>
+        <ul class="flex1">
+            <li class="canTouch m-calendar-next" data-com="canTouch"><span class="next-text">后一天</span><span class="more"></span></li>
+        </ul>
+    </div>
+<div id='ticket_content'>
+    <div class="indentOut hollow" id="desc-wrap">
+        <div class='logo'>
+            <span id="dayStr" class="today">
+                2016-07-11
+                今天
+            </span>
+            <span>大盘：</span>
+            <span id='ticket_count'>2197.6万</span>
+        </div>
+        <div id="dayTips" class="update">每30分钟更新一次，上次更新北京时间9:30</div>
+    </div>
+    <div class="ticketList">
+        <ul id='ticketList_Title' class="title clearfix">
+            <li class="c1">片名</li>
+            <li class="c2" id="ticket-day">实时票房<div>（万元）</div>
+            </li>
+            <li class="c3">票房占比</li>
+            <li class="c4">排片占比</li>
+            <li class="c5">上座率</li>
+        </ul>
+        <div class="content strip" id='ticket_tbody'>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246591?_v_=yes'">
+                <li class='c1'>
+                    <b>大鱼海棠</b>
+                    <br><em>上映4天</em><em style="margin-left: .1rem">2.34亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>776.46</b><br/>
+                </li>
+                <li class="c3 ">35.3%</li>
+                <li class="c4 ">
+                        25.0%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            4.1%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>大鱼海棠</b>
+                    <br><em>上映4天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/341289?_v_=yes'">
+                <li class='c1'>
+                    <b>寒战2</b>
+                    <br><em>上映4天</em><em style="margin-left: .1rem">3.03亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>560.50</b><br/>
+                </li>
+                <li class="c3 ">25.5%</li>
+                <li class="c4 ">
+                        27.3%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            2.6%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>寒战2</b>
+                    <br><em>上映4天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246575?_v_=yes'">
+                <li class='c1'>
+                    <b>致青春·原来你还在这里</b>
+                    <br><em>上映4天</em><em style="margin-left: .1rem">1.83亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>452.18</b><br/>
+                </li>
+                <li class="c3 ">20.6%</li>
+                <li class="c4 ">
+                        25.0%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            3.6%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>致青春·原来你还在这里</b>
+                    <br><em>上映4天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/13511?_v_=yes'">
+                <li class='c1'>
+                    <b>忍者神龟2：破影而出</b>
+                    <br><em>上映10天</em><em style="margin-left: .1rem">3.36亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>144.49</b><br/>
+                </li>
+                <li class="c3 ">6.6%</li>
+                <li class="c4 ">
+                        6.9%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            3.8%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>忍者神龟2：破影而出</b>
+                    <br><em>上映10天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246333?_v_=yes'">
+                <li class='c1'>
+                    <b>惊天魔盗团2</b>
+                    <br><em>上映18天</em><em style="margin-left: .1rem">6.18亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>62.15</b><br/>
+                </li>
+                <li class="c3 ">2.8%</li>
+                <li class="c4 ">
+                        2.0%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            5.4%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>惊天魔盗团2</b>
+                    <br><em>上映18天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/337438?_v_=yes'">
+                <li class='c1'>
+                    <b>大火种</b>
+                    <br><em>上映15天</em><em style="margin-left: .1rem">696.0万</em>
+                </li>
+                <li class="c2 ">
+                    <b>44.26</b><br/>
+                </li>
+                <li class="c3 ">2.0%</li>
+                <li class="c4 ">
+                        0.1%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            51.4%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>大火种</b>
+                    <br><em>上映15天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/338506?_v_=yes'">
+                <li class='c1'>
+                    <b>赏金猎人</b>
+                    <br><em>上映11天</em><em style="margin-left: .1rem">2.02亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>39.48</b><br/>
+                </li>
+                <li class="c3 ">1.8%</li>
+                <li class="c4 ">
+                        2.3%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            3.8%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>赏金猎人</b>
+                    <br><em>上映11天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/247244?_v_=yes'">
+                <li class='c1'>
+                    <b>摇滚藏獒</b>
+                    <br><em>上映4天</em><em style="margin-left: .1rem">2624.1万</em>
+                </li>
+                <li class="c2 ">
+                    <b>28.67</b><br/>
+                </li>
+                <li class="c3 ">1.3%</li>
+                <li class="c4 ">
+                        3.9%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            5.2%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>摇滚藏獒</b>
+                    <br><em>上映4天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246375?_v_=yes'">
+                <li class='c1'>
+                    <b>独立日：卷土重来</b>
+                    <br><em>上映18天</em><em style="margin-left: .1rem">4.92亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>26.07</b><br/>
+                </li>
+                <li class="c3 ">1.2%</li>
+                <li class="c4 ">
+                        0.9%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            3.9%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>独立日：卷土重来</b>
+                    <br><em>上映18天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/345076?_v_=yes'">
+                <li class='c1'>
+                    <b>发条城市</b>
+                    <br><em>上映4天</em><em style="margin-left: .1rem">721.9万</em>
+                </li>
+                <li class="c2 ">
+                    <b>22.33</b><br/>
+                </li>
+                <li class="c3 ">1.0%</li>
+                <li class="c4 ">
+                        2.9%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            3.9%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>发条城市</b>
+                    <br><em>上映4天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/343379?_v_=yes'">
+                <li class='c1'>
+                    <b>所以……和黑粉结婚了</b>
+                    <br><em>上映12天</em><em style="margin-left: .1rem">7970.7万</em>
+                </li>
+                <li class="c2 ">
+                    <b>12.27</b><br/>
+                </li>
+                <li class="c3 ">0.6%</li>
+                <li class="c4 ">
+                        0.6%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            6.6%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>所以……和黑粉结婚了</b>
+                    <br><em>上映12天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246366?_v_=yes'">
+                <li class='c1'>
+                    <b>海底总动员2：多莉去哪儿</b>
+                    <br><em>上映25天</em><em style="margin-left: .1rem">2.52亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>11.92</b><br/>
+                </li>
+                <li class="c3 ">0.5%</li>
+                <li class="c4 ">
+                        0.4%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            5.7%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>海底总动员2：多莉去哪儿</b>
+                    <br><em>上映25天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/368116?_v_=yes'">
+                <li class='c1'>
+                    <b>张震讲故事之合租屋</b>
+                    <br><em>上映4天</em><em style="margin-left: .1rem">286.0万</em>
+                </li>
+                <li class="c2 ">
+                    <b>10.29</b><br/>
+                </li>
+                <li class="c3 ">0.5%</li>
+                <li class="c4 ">
+                        1.7%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            2.1%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>张震讲故事之合租屋</b>
+                    <br><em>上映4天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/368071?_v_=yes'">
+                <li class='c1'>
+                    <b>南口1937</b>
+                    <br><em>上映19天</em><em style="margin-left: .1rem">119.6万</em>
+                </li>
+                <li class="c2 ">
+                    <b>3.98</b><br/>
+                </li>
+                <li class="c3 ">0.2%</li>
+                <li class="c4 ">
+                        0.0%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            66.4%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>南口1937</b>
+                    <br><em>上映19天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246972?_v_=yes'">
+                <li class='c1'>
+                    <b>三人行</b>
+                    <br><em>上映18天</em><em style="margin-left: .1rem">1.00亿</em>
+                </li>
+                <li class="c2 ">
+                    <b>2.06</b><br/>
+                </li>
+                <li class="c3 ">0.1%</li>
+                <li class="c4 ">
+                        0.1%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            11.7%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>三人行</b>
+                    <br><em>上映18天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/367990?_v_=yes'">
+                <li class='c1'>
+                    <b>古田会议</b>
+                    <br><em>上映11天</em><em style="margin-left: .1rem">55.3万</em>
+                </li>
+                <li class="c2 ">
+                    <b>1.42</b><br/>
+                </li>
+                <li class="c3 ">0.1%</li>
+                <li class="c4 ">
+                        0.1%
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            17.7%
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>古田会议</b>
+                    <br><em>上映11天</em>
+                </li>
+                </ul>
+        </div>
+    </div>
+    <div id='viewYesTicket' class="indentOut canTouch " data-day="1" data-com="canTouch">查看昨日票房</div>
+</div>
+<div data-com="gotoTop"></div>
+<div id="download">
+    <div class="dl-cont">
+        <img class="dl-img" src="http://ms0.meituan.net/piaofang/img/download-icon.png">
+        <div class="dl-desc">
+            <h3 class="dl-title">
+                猫眼专业版
+            </h3>
+            <p class="dl-txt">
+               秒级实时票房随时看
+            </p>
+        </div>
+    </div>
+    <a class="dl-action" href="/app">立即下载</a>
+    <script>
+        var clientType = '普通浏览器';
+
+        if (false) clientType = '猫眼App';
+        if (false) clientType = '团购App';
+
+        document.querySelector('.dl-action').addEventListener('touchstart', function() {
+            logger('_trackEvent', '下载贴条', '下载', clientType);
+        });
+    </script>
+</div>
+<div id="rightCopy">京ICP备10211739号 京公网安备11010502025546号</div>
+<script>
+var isDev=false;
+    var sRev=('{&quot;biz/box-letters-detail.js&quot;:&quot;4990457c&quot;,&quot;biz/box-letters.js&quot;:&quot;098d77ad&quot;,&quot;biz/calendar-nav.js&quot;:&quot;7cf3a59d&quot;,&quot;biz/company.js&quot;:&quot;40d761b0&quot;,&quot;biz/detail.js&quot;:&quot;c1f2cf96&quot;,&quot;biz/ds.js&quot;:&quot;3ad9f5c6&quot;,&quot;biz/expandable-container.js&quot;:&quot;fa391226&quot;,&quot;biz/forecast.js&quot;:&quot;034c706d&quot;,&quot;biz/guess.js&quot;:&quot;e6a999ce&quot;,&quot;biz/monthly.js&quot;:&quot;b56cc770&quot;,&quot;biz/months.js&quot;:&quot;2aff7e45&quot;,&quot;biz/movie.js&quot;:&quot;b5842c82&quot;,&quot;biz/rankings.js&quot;:&quot;579413e1&quot;,&quot;biz/search.js&quot;:&quot;b68d732a&quot;,&quot;biz/seat.js&quot;:&quot;efc873a3&quot;,&quot;biz/show.js&quot;:&quot;b761a5c2&quot;,&quot;biz/ssz.js&quot;:&quot;5f62f97f&quot;,&quot;biz/table-view.js&quot;:&quot;8416886f&quot;,&quot;biz/theatre.js&quot;:&quot;4a434a6d&quot;,&quot;biz/ticket.js&quot;:&quot;2765a3e9&quot;,&quot;lib/count.js&quot;:&quot;90e1e54b&quot;,&quot;lib/declareable.js&quot;:&quot;ac3ea433&quot;,&quot;lib/eruda.js&quot;:&quot;3b56e273&quot;,&quot;lib/history.js&quot;:&quot;592b03f7&quot;,&quot;lib/ichart.js&quot;:&quot;e4336755&quot;,&quot;lib/mtnb.js&quot;:&quot;3d652478&quot;,&quot;lib/sharekit.js&quot;:&quot;37e27424&quot;,&quot;lib/solarlunar.js&quot;:&quot;1ce10dc9&quot;,&quot;lib/swipe.js&quot;:&quot;b058c3d8&quot;,&quot;lib/wechat.js&quot;:&quot;2044fc41&quot;,&quot;lib/zepto.js&quot;:&quot;65f8ba92&quot;,&quot;truck.js&quot;:&quot;40affbc5&quot;,&quot;util/alphaCatWelcome.js&quot;:&quot;f50b998d&quot;,&quot;util/calendar.js&quot;:&quot;b70edff0&quot;,&quot;util/canTouch.js&quot;:&quot;998c9c42&quot;,&quot;util/cityBar.js&quot;:&quot;f32c71d4&quot;,&quot;util/colors.js&quot;:&quot;4a81b7a4&quot;,&quot;util/cookie.js&quot;:&quot;495e1b76&quot;,&quot;util/dateBar.js&quot;:&quot;905ee2eb&quot;,&quot;util/el-sticky.js&quot;:&quot;407b625a&quot;,&quot;util/env.js&quot;:&quot;8bb29f97&quot;,&quot;util/gaConfig.js&quot;:&quot;08103446&quot;,&quot;util/gotoTop.js&quot;:&quot;edf416a1&quot;,&quot;util/hisBack.js&quot;:&quot;7c9a21a0&quot;,&quot;util/hrefTo.js&quot;:&quot;cb7d28ae&quot;,&quot;util/itouch.js&quot;:&quot;42526fe9&quot;,&quot;util/lazyload.js&quot;:&quot;5e3f5beb&quot;,&quot;util/nAjax.js&quot;:&quot;b0a16035&quot;,&quot;util/nuwa.js&quot;:&quot;f3da34ad&quot;,&quot;util/pull-refresh.js&quot;:&quot;8f9fe026&quot;,&quot;util/query.js&quot;:&quot;838d8c3c&quot;,&quot;util/raf.js&quot;:&quot;e8c3592a&quot;,&quot;util/remember.js&quot;:&quot;46dadfd0&quot;,&quot;util/searchInput.js&quot;:&quot;81322d4a&quot;,&quot;util/slider.js&quot;:&quot;bb580a4a&quot;,&quot;util/tab.js&quot;:&quot;6699acd9&quot;,&quot;util/tools.js&quot;:&quot;dac235c7&quot;,&quot;util/weeklist.js&quot;:&quot;7c24ddbd&quot;,&quot;util/xnb.js&quot;:&quot;c24333c9&quot;}').replace(/&quot;/g,'"');
+    var sDep=('{&quot;js/biz/box-letters-detail.4990457c.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/xnb.js&quot;],&quot;js/biz/box-letters.098d77ad.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/pull-refresh.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/xnb.js&quot;],&quot;js/biz/calendar-nav.7cf3a59d.js&quot;:[&quot;util/tools.js&quot;],&quot;js/biz/company.40d761b0.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/remember.js&quot;,&quot;biz/calendar-nav.js&quot;],&quot;js/biz/detail.c1f2cf96.js&quot;:[&quot;lib/ichart.js&quot;],&quot;js/biz/ds.3ad9f5c6.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;lib/wechat.js&quot;,&quot;lib/mtnb.js&quot;,&quot;lib/sharekit.js&quot;,&quot;util/itouch.js&quot;,&quot;util/cookie.js&quot;,&quot;util/nAjax.js&quot;],&quot;js/biz/expandable-container.fa391226.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/biz/forecast.034c706d.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;util/tools.js&quot;,&quot;util/remember.js&quot;,&quot;biz/table-view.js&quot;,&quot;util/nAjax.js&quot;,&quot;biz/calendar-nav.js&quot;],&quot;js/biz/guess.e6a999ce.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;lib/wechat.js&quot;,&quot;lib/mtnb.js&quot;,&quot;lib/sharekit.js&quot;,&quot;util/itouch.js&quot;,&quot;util/cookie.js&quot;,&quot;util/nAjax.js&quot;],&quot;js/biz/monthly.b56cc770.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;],&quot;js/biz/months.2aff7e45.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/biz/movie.b5842c82.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;util/tools.js&quot;,&quot;biz/table-view.js&quot;,&quot;util/nAjax.js&quot;,&quot;biz/calendar-nav.js&quot;,&quot;biz/expandable-container.js&quot;,&quot;util/el-sticky.js&quot;,&quot;biz/detail.js&quot;,&quot;util/xnb.js&quot;],&quot;js/biz/rankings.579413e1.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/nAjax.js&quot;],&quot;js/biz/search.b68d732a.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/query.js&quot;],&quot;js/biz/seat.efc873a3.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/history.js&quot;,&quot;util/nAjax.js&quot;],&quot;js/biz/show.b761a5c2.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;util/itouch.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/colors.js&quot;,&quot;util/tools.js&quot;],&quot;js/biz/ssz.5f62f97f.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;lib/wechat.js&quot;,&quot;lib/mtnb.js&quot;,&quot;lib/sharekit.js&quot;,&quot;util/itouch.js&quot;,&quot;util/cookie.js&quot;,&quot;util/nAjax.js&quot;],&quot;js/biz/table-view.8416886f.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/biz/theatre.4a434a6d.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/ichart.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/remember.js&quot;,&quot;biz/calendar-nav.js&quot;],&quot;js/biz/ticket.2765a3e9.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/tools.js&quot;,&quot;biz/calendar-nav.js&quot;],&quot;js/lib/count.90e1e54b.js&quot;:[],&quot;js/lib/declareable.ac3ea433.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/lib/eruda.3b56e273.js&quot;:[],&quot;js/lib/history.592b03f7.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/lib/ichart.e4336755.js&quot;:[],&quot;js/lib/mtnb.3d652478.js&quot;:[],&quot;js/lib/sharekit.37e27424.js&quot;:[],&quot;js/lib/solarlunar.1ce10dc9.js&quot;:[],&quot;js/lib/swipe.b058c3d8.js&quot;:[],&quot;js/lib/wechat.2044fc41.js&quot;:[],&quot;js/lib/zepto.65f8ba92.js&quot;:[],&quot;js/truck.40affbc5.js&quot;:[],&quot;js/util/alphaCatWelcome.f50b998d.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/calendar.b70edff0.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/solarlunar.js&quot;,&quot;util/weeklist.js&quot;],&quot;js/util/canTouch.998c9c42.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/cityBar.f32c71d4.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/tools.js&quot;],&quot;js/util/colors.4a81b7a4.js&quot;:[],&quot;js/util/cookie.495e1b76.js&quot;:[],&quot;js/util/dateBar.905ee2eb.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/calendar.js&quot;,&quot;util/tools.js&quot;],&quot;js/util/el-sticky.407b625a.js&quot;:[&quot;util/raf.js&quot;],&quot;js/util/env.8bb29f97.js&quot;:[],&quot;js/util/gaConfig.08103446.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/gotoTop.edf416a1.js&quot;:[],&quot;js/util/hisBack.7c9a21a0.js&quot;:[],&quot;js/util/hrefTo.cb7d28ae.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/itouch.42526fe9.js&quot;:[],&quot;js/util/lazyload.5e3f5beb.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/nAjax.b0a16035.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/tools.js&quot;],&quot;js/util/nuwa.f3da34ad.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/pull-refresh.8f9fe026.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/raf.js&quot;],&quot;js/util/query.838d8c3c.js&quot;:[],&quot;js/util/raf.e8c3592a.js&quot;:[],&quot;js/util/remember.46dadfd0.js&quot;:[&quot;lib/zepto.js&quot;,&quot;util/query.js&quot;],&quot;js/util/searchInput.81322d4a.js&quot;:[],&quot;js/util/slider.bb580a4a.js&quot;:[&quot;lib/zepto.js&quot;,&quot;lib/swipe.js&quot;,&quot;util/lazyload.js&quot;],&quot;js/util/tab.6699acd9.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/tools.dac235c7.js&quot;:[&quot;lib/zepto.js&quot;],&quot;js/util/weeklist.7c24ddbd.js&quot;:[],&quot;js/util/xnb.c24333c9.js&quot;:[&quot;lib/mtnb.js&quot;,&quot;lib/wechat.js&quot;,&quot;util/nAjax.js&quot;,&quot;util/env.js&quot;]}').replace(/&quot;/g,'"');
+    var requirejs = {};
+    requirejs.__requirejsConfig = {
+        baseUrl:'http://ms0.meituan.net/',
+        revision:JSON.parse(sRev),
+        prefix: 'piaofang/js/',
+        cachePrefix: 'n~', 
+        combo: {
+            url: 'http://mc.meituan.net/combo/?f=',
+            deps:JSON.parse(sDep)
+        }
+    }
+</script>
+<script src="http://ms0.meituan.net/piaofang/js/truck.40affbc5.js"></script>
+<script type="text/javascript">
+require(['lib/declareable.js','lib/count.js','util/gaConfig.js','util/nuwa.js']);
+</script>
+<script>require(['biz/ticket.js']);</script>
+</body>
+</html>
+
