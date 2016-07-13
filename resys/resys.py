@@ -98,7 +98,7 @@ class RecSys:
 
 
 if __name__ == "__main__":
-    #do_csv()
+    do_csv()
     resys = RecSys()
     resys.load_csv()
     resys.train_model()
