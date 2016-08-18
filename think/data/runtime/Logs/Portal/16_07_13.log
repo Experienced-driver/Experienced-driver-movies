@@ -1,0 +1,14 @@
+[ 2016-07-13T15:35:47+08:00 ] 127.0.0.1 /think/index.php?g=Portal&m=list&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%13 ) ORDER BY income_now desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `piaofanginfo` WHERE ( time like %13 ) ORDER BY income_now desc 
+
+[ 2016-07-13T15:44:54+08:00 ] 127.0.0.1 /think/index.php?g=Portal&m=list&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%13 ) ORDER BY income_now desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `piaofanginfo` WHERE ( time like %13 ) ORDER BY income_now desc 
+
+[ 2016-07-13T19:34:18+08:00 ] 127.0.0.1 /think/index.php?g=&m=article&a=index&id=2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `comments` WHERE ( User_id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `comments` WHERE ( User_id= ) 
+

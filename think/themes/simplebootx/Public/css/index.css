@@ -1,0 +1,282 @@
+/*html{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}*/
+#backtotop{position: fixed;bottom: 50px;right:20px;display: none;cursor: pointer;font-size: 50px;z-index: 9999;}
+#backtotop:hover{color:#333}
+#main-menu-user li.user{display: none}
+.caption-wraper{position: absolute;left:50%;bottom:2em;}
+.caption-wraper .caption{
+    position: relative;left:-50%;
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 0.4em 1em;
+    color:#fff;
+    -webkit-border-radius: 1.2em;
+    -moz-border-radius: 1.2em;
+    -ms-border-radius: 1.2em;
+    -o-border-radius: 1.2em;
+    border-radius: 1.2em;
+}
+a {
+    /*color: #cc3333 ;*/
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@media (max-width: 767px){
+    .sy-box{margin: 12px -20px 0 -20px;}
+    .caption-wraper{left:0;bottom: 0.4em;}
+    .caption-wraper .caption{
+        left: 0;
+        padding: 0.2em 0.4em;
+        font-size: 0.92em;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;}
+}
+.navbar-inner{
+    background: #333333;
+}
+
+.b-l {
+        width: 70%;
+        float: left;
+    }
+.b-2{
+        width: 30%;
+        float: left;
+    }
+
+.index-jum{
+    margin-top: 30px;
+    /*background: #bdbdbd;*/
+}
+.index-jum-input input{
+    height: 34px;
+    line-height: 34px;
+}
+@media screen and (min-width: 768px) {
+    .jumbotron, .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .jumbotron, .container-fluid .jumbotron {
+        border-radius: 6px;
+    }
+    .jumbotron {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        color: inherit;
+        background-color: #eee;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+.col-xs-6{
+    position: relative;
+    min-height: 1px;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+}
+a.index-mv-thumbnail{
+    height: 200px;
+    width: 140px;
+    overflow: hidden;
+}
+.index-mv-thumbnail img{
+    width: inherit;
+    height: inherit;
+}
+.index-mv-thumbnail p{
+    width: 160px;
+    overflow: hidden;
+}
+.index-score-lable{
+    color: #fff;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background:#cc3333;
+}
+.index-mv-list li{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17.1%;
+}
+.index-footer{
+    background: #eee;
+}
+.navbar .nav>li>a:focus, .navbar .nav>li>a{
+    color: #fff !important;
+    text-shadow: none;
+}
+.index-bangdan{
+    padding: 0px 10px 10px;
+    margin-bottom: 15px;
+}
+.index-bangdan a{
+    cursor: pointer;
+}
+
+.index-bangdan li{
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.index-bangdan li:hover{
+    background: #1e1e1e;
+    color: #fff;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+}
+.index-mv-tuijian li{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17.7%;
+}
+.index-mv-tuijian a{
+    text-decoration: none;
+}
+p.index-tuijian-info{
+    width: 140px ;
+    height: 100px;
+    font-size: 10px;
+    overflow-y: hidden;
+    color: #555;
+}
+p.index-tuijian-fenlei{
+    width: 140px ;
+    font-size: 8px;
+    color: orange;
+}
+.index-self{
+    height: 360px;
+    display: block;
+    background: #e1e1e1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.index-self img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.img-circle {
+
+}
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.index-search {
+    margin-top: 20px;
+    vert-align: middle;
+}
+input.in-se-box{
+    height: 34px;
+}
+#zhuanti img{
+    height: 270px;
+    overflow-x: hidden;
+}
+
+/*****************
+    电影页面
+******************/
+.mv-dt-pic{
+    width:200px;
+    height: 300px;
+    float: left;
+}
+.mv-dt-info{
+    float: left;
+    width: 80%;
+    overflow:hidden;
+}
+.mv-dt-info label{
+    float: left;
+    width: 80px;
+}
+p.mv-dt-sim-intor{
+    font-size: 8px!important;
+    color: #555555;
+}
+
+.mv-dt-star{
+    float: right;
+}
+.mv-dt-com textarea{
+    width: 650px;
+    height: 100px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+img.mv-dt-head{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+}
+.mv-dt-other-com p{
+    display: block;
+    float: right;
+    width: 550px;
+}
+.mv-com-username{
+    padding-left: 5px;
+    color:#333333;
+}
+.mv-com-time{
+    float: right;
+    color: #428bca;;
+    font-size: 10px !important;
+}
+
+/*评分*/
+.score-demo {
+    height:30px;
+    text-align: center;
+}
+.score-demo input:focus, .score-demo textarea:focus, .score-demo select:focus { border: 1px solid #95BDD4 }
+.score-demo input:hover, .score-demo textarea:hover, .score-demo select:hover { border: 1px solid #BDBDBD }
+
+.score-demo .target-demo { display: inline-block; vertical-align: middle }
+
+.score-demo div.hint { background-color: #F8F8F8; border-radius: 5px; color: #333; display: inline-block; height: 27px; font-size: 1.5em; text-align: center; width: 135px; vertical-align: middle }
+
+.score-demo label { color: #444; font-size: 1.7em; letter-spacing: .7px; margin-right: 5px; padding-left: 6px; vertical-align: middle }
+
+.score-demo a.run { font-size: 1.5em; margin-left: 5px; letter-spacing: .7px; vertical-align: middle }

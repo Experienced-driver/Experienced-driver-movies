@@ -1,0 +1,644 @@
+[ 2016-07-13T15:27:43+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005095s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:29:12+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002033s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006766s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:29:15+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005586s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:34:10+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001970s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006138s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:34:28+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002567s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008163s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:35:03+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005943s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:46:06+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005568s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:47:20+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001912s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005347s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:48:14+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001961s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005065s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:50:56+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006344s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:51:02+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005135s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011365s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:51:20+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002908s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008050s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:51:49+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005315s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:52:38+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002173s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006411s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:53:25+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002057s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005719s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:55:07+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006284s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:57:27+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006015s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:58:12+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005460s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:58:21+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005577s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:58:25+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006661s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:58:32+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005141s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:58:46+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003983s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T15:58:50+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002136s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007850s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:01:43+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001811s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005617s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:01:49+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006067s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:02:21+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005164s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:02:57+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005898s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:03:28+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003819s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:03:31+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003994s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:04:07+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002042s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006174s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:08:39+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005858s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:08:44+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002588s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005773s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:09:20+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002042s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005392s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:09:25+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005377s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:09:47+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003491s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:23:49+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003035s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007228s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:23:54+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002382s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005724s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:23:58+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003531s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:34:17+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001579s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004699s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:34:20+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003478s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:37:24+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003657s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:37:29+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002241s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006555s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:37:33+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003917s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:37:43+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004642s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:37:50+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002144s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005451s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:55:28+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004187s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:55:33+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002507s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005752s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:56:28+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001603s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005399s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:56:32+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005146s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:56:36+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004403s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:57:38+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006450s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:58:24+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004984s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T16:58:57+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005308s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:00:32+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005714s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:01:05+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005182s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:01:41+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005972s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:02:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005024s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:03:24+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001987s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005537s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:03:44+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006610s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:04:40+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007736s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:04:53+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005010s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:05:15+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005526s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:05:36+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003876s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:06:04+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002743s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:06:57+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005526s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:11:17+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004909s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:11:25+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004558s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:18:10+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006148s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:18:24+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001829s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007203s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:19:09+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005944s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:19:38+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003779s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:19:44+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003970s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:25:50+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005402s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:27:40+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004022s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:28:41+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002233s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007534s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:32:05+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003184s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:37:17+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:37:57+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001987s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006725s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:38:01+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005022s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:38:24+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001944s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006882s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:40:30+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002228s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008430s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:41:40+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002760s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006616s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:41:44+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002703s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009273s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:45:02+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002997s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008076s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:45:22+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002931s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006547s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:45:30+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002539s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006486s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:45:34+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007626s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:45:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007891s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:45:58+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002705s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012905s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:47:13+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002809s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009970s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:48:06+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005468s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-13T17:48:10+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006371s ]
+NOTIC: [8] Undefined index: url D:\AppServ\www\think\application\Common\Controller\AppframeController.class.php 第 24 行.
+

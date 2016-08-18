@@ -5,6 +5,7 @@
 		<meta name="keywords" content="{$site_seo_keywords}" />
 		<meta name="description" content="{$site_seo_description}">
 		<tc_include file="Public:head" />
+		<tc_include file="Public:script" />
 		<link href="__TMPL__Public/css/slippry/slippry.css" rel="stylesheet">
 		<style>
 			.caption-wraper{position: absolute;left:50%;bottom:2em;}
@@ -33,6 +34,7 @@
 				border-radius: 0;}
 			}
 		</style>
+
 	</head>
 <body class="body-white">
 <tc_include file="Public:nav" />
@@ -42,102 +44,179 @@ $home_slides=sp_getslide("portal_index");
 
 $home_slides=empty($home_slides)?$default_home_slides:$home_slides;
 </php>
-<ul id="homeslider" class="unstyled">
-	<foreach name="home_slides" item="vo">
-	<li>
-		<div class="caption-wraper">
-			<div class="caption">{$vo.slide_name}</div>
-		</div>
-		<a href="{$vo.slide_url}"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt=""></a>
-	</li>
-	</foreach>
-</ul>
+
+
 <div class="container">
-	
-	<div>
-		<h1 class="text-center">快速了解ThinkCMF</h1>
-		<h3 class="text-center">Quickly understand the ThinkCMF</h3>
+
+<if condition="empty($list['user_avatar'])">
+
+<div class="test">
+	<!--<若用户未注册，则显示此面板>-->
+	<div class="jumbotron index-jum">
+			<h1>Welcome!</h1>
+			<p>Find Your Favorite Films! 注册以后可以搜索和享受我们的定制推荐服务！！！</p>
+			 <form action="{:U('user/login/dologin')}" method="post">
+							<div class="index-jum-input">
+									<input type="text" id="input_username" name="username" placeholder="手机号/邮箱/用户名">
+									<input type="password" id="input_password" name="password" placeholder="密码">
+							</div>
+							<a href="{:leuu('user/login/index')}"><i class="fa fa-sign-in"></i>
+								<input type="button" class="btn btn-primary" value="Login">
+							</a>
+							<a class="btn btn-warning btn-lg"  role="button" href="{:leuu('user/register/index')}">
+								Sigh in
+							</a>
+			 </form>
+
 	</div>
-	<div class="row">
-		<div class="span4">
-			 <h2 class="font-large nospace"><i class="fa fa-bars"></i> MVC分层模式</h2>
-             <p>使用MVC应用程序被分成三个核心部件：模型（M）、视图（V）、控制器（C），他不是一个新的概念，只是ThinkCMF将其发挥到了极致。</p>
-		</div>
-		<div class="span4">
-			 <h2 class="font-large nospace"><i class="fa fa-group"></i> 用户管理</h2>
-             <p>ThinkCMF内置了灵活的用户管理方式，并可直接与第三方站点进行互联互通，如果你愿意甚至可以对单个用户或群体用户的行为进行记录及分享，为您的运营决策提供有效参考数据。</p>
-		</div>
-		<div class="span4">
-			  <h2 class="font-large nospace"><i class="fa fa-cloud"></i> 云端部署</h2>
-              <p>通过驱动的方式可以轻松支持云平台的部署，让你的网站无缝迁移，内置已经支持SAE、BAE，正式版将对云端部署进行进一步优化。</p>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="span4">
-			 <h2 class="font-large nospace"><i class="fa fa-heart"></i> 安全策略</h2>
-             <p>提供的稳健的安全策略，包括备份恢复，容错，防治恶意攻击登陆，网页防篡改等多项安全管理功能，保证系统安全，可靠，稳定的运行。</p>
-		</div>
-		<div class="span4">
-			 <h2 class="font-large nospace"><i class="fa fa-cubes"></i> 应用模块化</h2>
-             <p>提出全新的应用模式进行扩展，不管是你开发一个小功能还是一个全新的站点，在ThinkCMF中你只是增加了一个APP，每个独立运行互不影响，便于灵活扩展和二次开发。</p>
-		</div>
-		<div class="span4">
-			  <h2 class="font-large nospace"><i class="fa fa-certificate"></i> 免费开源</h2>
-              <p>代码遵循Apache2开源协议，免费使用，对商业用户也无任何限制。</p>
-		</div>
-	</div>
-	
-	<div>
-		<h1 class="text-center">最新资讯</h1>
-		<h3 class="text-center">Last News</h3>
-	</div>
-	<php>
-		$lastnews=sp_sql_posts("cid:$portal_index_lastnews;field:post_title,post_excerpt,tid,smeta;order:listorder asc;limit:4;"); 
-	</php>
-	<div class="row">
-		<foreach name="lastnews" item="vo">
-		<php>$smeta=json_decode($vo['smeta'],true);</php>
-		<div class="span3">
-			<div class="tc-gridbox">
-				<div class="header">
-					<div class="item-image">
-						<a href="{:leuu('article/index',array('id'=>$vo['tid'],'cid'=>$vo['term_id']))}">
-							<if condition="empty($smeta['thumb'])"> 
-								<img src="__TMPL__Public/images/default_tupian1.png" class="img-responsive" alt="{$vo.post_title}"/>
-							<else /> 
-								<img src="{:sp_get_asset_upload_path($smeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$vo.post_title}" />
-							</if>
-						</a>
-					</div>
-					<h3><a href="{:leuu('article/index',array('id'=>$vo['tid'],'cid'=>$vo['term_id']))}">{$vo.post_title}</a></h3>
-					<hr>
+
+
+
+</div>
+
+
+	<!--<若用户已经注册，则此面板消失，显示下一个面板>-->
+<else/>
+
+<div class="b-l" id="zhuanti">
+
+		<h3>本周专题</h3>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<foreach name="home_slides" item="vo">
+				<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+			</foreach>
+				<!-- Wrapper for slides -->
+
+			<div class="carousel-inner" role="listbox">
+						<div class="item active" name="home_slides" item="vo">
+								<a href="{$vo.slide_url}">
+									<img style="width:100%; height:100%;" src="http://7i7k6x.com1.z0.glb.clouddn.com/%E8%80%81%E5%8F%B8%E6%9C%BA1.jpg" alt="...">
+								</a>
+								<div class="carousel-caption"> <p align="center">国产专题</p>
+								</div>
+						</div>
+						<div class="item" name="home_slides" item="vo">
+								<a href="{$vo.slide_url}">
+									<img style="width:100%; height:100%;" src="http://7i7k6x.com1.z0.glb.clouddn.com/%E8%80%81%E5%8F%B8%E6%9C%BA2.jpg" alt="...">
+								</a>
+
+								<div class="carousel-caption"> <p align="center">好莱坞专题</p>
+								</div>
+						</div>
+						<div class="item" name="home_slides" item="vo">
+								<a href="{$vo.slide_url}">
+									<img style="width:100%; height:100%;" src="http://7i7k6x.com1.z0.glb.clouddn.com/%E8%80%81%E5%8F%B8%E6%9C%BA3.jpg" alt="...">
+								</a>
+								<div class="carousel-caption"> <p align="center">文艺专题</p>
+								</div>
+						</div>
 				</div>
-				<div class="body">
-					<p><a href="{:leuu('article/index',array('id'=>$vo['tid'],'cid'=>$vo['term_id']))}">{:msubstr($vo['post_excerpt'],0,32)}</a></p>
-				</div>
-			</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</a>
 		</div>
-		</foreach>
-	</div>
+</div>
+
+
+<div class="b-2" id="bangdan">
+		<h3 align="center">本周榜单</h3>
+		<div class="index-bangdan">
+			<foreach name="list['bangdan']" item="vo">
+				<a href="{:leuu('article/index',array('id'=>$vo['_id']))}"><li>{$vo.name}</li></a>
+
+			</foreach>
+		</div>
+</div>
+
+
+
+    <!--<用户注册后会显示的面板>-->
+    <div class="b-l" id="tuijian">
+        <h3>个性推荐</h3>
+        <div class="index-mv-tuijian">
+					<foreach name="list['tuijian']" item="vo">
+            <li class="col-xs-6 col-md-3">
+                <a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+                    <img src="{$vo.image}" class="img-responsive" alt="..." >
+                    <p>{$vo.name}<span class="index-score-lable"><br/>{$vo.douban_rating}</span></p>
+                    <p class="index-tuijian-fenlei">分类：{$vo.genres}</p>
+                    <p class="index-tuijian-info">{$vo.description}</p>
+                </a>
+            </li>
+					</foreach>
+        </div>
+    </div>
+    <div class="b-2" id="self-center">
+        <h3 align="center">个人中心</h3>
+        <div class="index-self">
+				<a href="{:U('user/profile/avatar')}">
+					<if condition="empty($list['user_avatar'])">
+            <img src="__TMPL__/Public/images/film004.jpg" class="img-circle img-thumbnail">
+
+					<else/>
+						<img src="__UPLOAD__avatar/{$list['user_avatar']}" class="img-circle img-thumbnail"/>
+					</if>
+					</a>
+            <p>{$list['user_name']}</p>
+            <a href="{:U('user/favorite/index')}"><button class="btn btn-warning">我的收藏</button></a>
+            <a href="{:U('user/center/index')}"><button class="btn btn-warning">个人中心</button></a>
+            <button class="btn btn-danger">我要反馈</button>
+
+        </div>
+    </div>
+    <!---<用户注册后会显示的面板> 结束-->
+    <div class="clearfix"></div>
+
+
+    <h2>最新上映</h2>
+    <div class="index-mv-list  ">
+			<foreach name="list['new']" item="vo">
+            <li class="col-xs-6 col-md-3">
+                <a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+                    <img src="{$vo.image}" class="img-responsive" alt="..." >
+                    <p>{$vo.name} <br/><span class="index-score-lable">
+											{$vo.douban_rating}</span></p>
+
+                </a>
+            </li>
+      </foreach>
+    </div>
+
+    <h2>最高票房</h2>
+    <div class="index-mv-list  ">
+			<foreach name="list['piaofang']" item="vo">
+        <li class="col-xs-6 col-md-3">
+            <a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+                <img src="{$vo.image}" class="img-responsive" alt="..." >
+                <p>{$vo.name} <br/><span class="index-score-lable">{$vo.douban_rating}</span></p>
+            </a>
+        </li>
+			</foreach>
+    </div>
+
+</if>
+
 <tc_include file="Public:footer"/>
 </div>
 
+
+
+
+
 <tc_include file="Public:scripts"/>
-<script src="__TMPL__Public/js/slippry.min.js"></script>
-<script>
-$(function() {
-	var demo1 = $("#homeslider").slippry({
-		transition: 'fade',
-		useCSS: true,
-		captions: false,
-		speed: 1000,
-		pause: 3000,
-		auto: true,
-		preload: 'visible'
-	});
-});
-</script>
+<script src="__TMPL__/Public/js/slippry.min.js"></script>
+
 {:hook('footer_end')}
 </body>
 </html>

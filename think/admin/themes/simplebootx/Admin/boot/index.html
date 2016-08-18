@@ -5,10 +5,13 @@
 <!-- Set render engine for 360 browser -->
 <meta name="renderer" content="webkit">
 <meta charset="utf-8">
-<title>ThinkCMF {:L('ADMIN_CENTER')}</title>
+<title>ExDriver MOV {:L('ADMIN_CENTER')}</title>
 
 <meta name="description" content="This is page-header (.page-header &gt; h1)">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="__PUBLIC__/images/favicon_ExDriver.ico" type="image/x-icon">
+<link rel="shortcut icon" href="__PUBLIC__/images/favicon_ExDriver.ico" type="image/x-icon">
 
 <link href="__PUBLIC__/simpleboot/themes/{:C('SP_ADMIN_STYLE')}/theme.min.css" rel="stylesheet">
 <link href="__PUBLIC__/simpleboot/css/simplebootadmin.css" rel="stylesheet">
@@ -69,16 +72,16 @@ var GV = {
 								<b class="arrow fa fa-angle-right normal"></b>
 								<i class="fa fa-reply back"></i>
 								<span class="menu-text back">返回</span>
-								
+
 							</a>
-							
+
 							<ul  class="submenu">
 									<php>getsubmenu1($menu['items'])</php>
-							</ul>	
+							</ul>
 						<php>}</php>
-						
+
 					</li>
-					
+
 				<php>}</php>
 <php>}</php>
 
@@ -106,11 +109,11 @@ var GV = {
 							</a>
 							<ul  class="submenu">
 									<php>getsubmenu2($menu['items'])</php>
-							</ul>	
+							</ul>
 						<php>}</php>
-						
+
 					</li>
-					
+
 				<php>}</php>
 <php>}</php>
 
@@ -121,7 +124,7 @@ var GV = {
 							$menu_name=L($menu['lang']);
 							$menu_name=$menu['lang']==$menu_name?$menu['name']:$menu_name;
 						</php>
-						
+
 						<a href="javascript:openapp('{$menu.url}','{$menu.id}','{$menu_name}',true);">
 							&nbsp;<i class="fa fa-angle-double-right"></i>
 							<span class="menu-text">
@@ -129,7 +132,7 @@ var GV = {
 							</span>
 						</a>
 					</li>
-					
+
 				<php>}</php>
 <php>}</php>
 
@@ -137,7 +140,7 @@ var GV = {
 <if condition="APP_DEBUG">
 <style>
 #think_page_trace_open{left: 0 !important;
-right: initial !important;}			
+right: initial !important;}
 </style>
 </if>
 
@@ -152,23 +155,23 @@ right: initial !important;}
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<a href="{:U('index/index')}" class="brand"> <small> 
+				<a href="{:U('index/index')}" class="brand"> <small>
 				<img src="__TMPL__Public/assets/images/logo-18.png">
-						ThinkCMF {:L('ADMIN_CENTER')}
+						ExDriver MOV {:L('ADMIN_CENTER')}
 				</small>
 				</a>
 				<div class="pull-left nav_shortcuts" >
-					
+
 					<a class="btn btn-small btn-warning" href="__ROOT__/" title="{:L('WEBSITE_HOME_PAGE')}" target="_blank">
 						<i class="fa fa-home"></i>
 					</a>
-					
+
 					<if condition="sp_auth_check(sp_get_current_admin_id(),'portal/AdminTerm/index')">
 					<a class="btn btn-small btn-success" href="javascript:openapp('{:U('portal/AdminTerm/index')}','index_termlist','{:L('PORTAL_ADMINTERM_INDEX')}');" title="{:L('PORTAL_ADMINTERM_INDEX')}">
 						<i class="fa fa-th"></i>
 					</a>
 					</if>
-					
+
 					<if condition="sp_auth_check(sp_get_current_admin_id(),'portal/AdminPost/index')">
 					<a class="btn btn-small btn-info" href="javascript:openapp('{:U('portal/AdminPost/index')}','index_postlist','{:L('PORTAL_ADMINPOST_INDEX')}');" title="{:L('PORTAL_ADMINPOST_INDEX')}">
 						<i class="fa fa-pencil"></i>
@@ -219,7 +222,7 @@ right: initial !important;}
 				{:getsubmenu($submenus)}
 			</ul>
 			</div>
-			
+
 		</div>
 
 		<div class="main-content">
@@ -241,7 +244,7 @@ right: initial !important;}
 			</div>
 		</div>
 	</div>
-	
+
 	<script src="__PUBLIC__/js/jquery.js"></script>
 	<script src="__PUBLIC__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
 	<script>

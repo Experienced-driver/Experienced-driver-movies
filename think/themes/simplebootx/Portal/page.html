@@ -9,87 +9,71 @@
 			#article_content img{height:auto !important}
 		</style>
 	</head>
-<body class="">
+<body class="body-white">
 <tc_include file="Public:nav" />
+
 <div class="container tc-main">
-	<div class="row">
-		<div class="span9">
-			
-			<div class="tc-box first-box article-box">
-		    	<h2>{$post_title}</h2>
-		    	<hr>
-		    	<div id="article_content">
-		    	{$post_content}
-		    	</div>
-		    	
-		    	{:hook('comment',array(
-		    		'post_id'=>$id,
-		    		'post_table'=>'posts',
-		    		'post_title'=>$post_title
-		    	))}
-		    </div>
-		    
-		</div>
-		<div class="span3">
-			<div class="tc-box first-box">
-				<div class="headtitle">
-	          		<h2>分享</h2>
-	          	</div>
-	          	<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{},"image":{"viewList":["weixin","tsina","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","tsina","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        	</div>
-        	
-        	<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>热门文章</h2>
-	        	</div>
-	        	<div class="ranking">
-	        		<php>
-						$hot_articles=sp_sql_posts("cid:$portal_index_lastnews;field:post_title,post_excerpt,tid,smeta;order:post_hits desc;limit:5;"); 
-					</php>
-		        	<ul class="unstyled">
-		        		<foreach name="hot_articles" item="vo">
-		        			<php>$top=$key<3?"top3":"";</php>
-							<li class="{$top}"><i>{$key+1}</i><a title="{$vo.post_title}" href="{:leuu('article/index',array('id'=>$vo['tid']))}">{$vo.post_title}</a></li>
-						</foreach>
-					</ul>
-				</div>
-			</div>
-			
-			<php>$ad=sp_getad("portal_page_right_aside");</php>
-			<if condition="!empty($ad)">
-        	<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>赞助商</h2>
-	        	</div>
-	        	<div>
-		        	{$ad}
-		        </div>
-			</div>
-			</if>
-			
-			<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>最新评论</h2>
-	        	</div>
-	        	<div class="comment-ranking">
-	        		<php>$last_comments=sp_get_comments("field:*;limit:0,5;order:createtime desc;");</php>
-	        		<foreach name="last_comments" item="vo">
-	                    <div class="comment-ranking-inner">
-	                        <i class="fa fa-comment"></i>
-	                        <a href="{:U('user/index/index',array('id'=>$vo['uid']))}">{$vo.full_name}:</a>
-	                        <span>{$vo.content}</span>
-	                        <a href="__ROOT__/{$vo.url}#comment{$vo.id}">查看原文</a>
-	                        <span class="comment-time">{:date('m月d日  H:i',strtotime($vo['createtime']))}</span>
-	                    </div>
-                    </foreach>
-                </div>
-			</div>
-        	
-		</div>
-		
+
+	<h2>剧情</h2>
+	<div class="index-mv-list  ">
+		<foreach name="movie['juqing']" item="vo">
+					<li class="col-xs-6 col-md-3">
+							<a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+									<img src="{$vo.image}" class="img-responsive" alt="..." >
+									<p>{$vo.name} <br/><span class="index-score-lable">{$vo.douban_rating}</span></p>
+							</a>
+					</li>
+		</foreach>
 	</div>
-              
+	<hr/>
+ <h2>喜剧</h2>
+	<div class="index-mv-list  ">
+		<foreach name="movie['xiju']" item="vo">
+					<li class="col-xs-6 col-md-3">
+							<a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+									<img src="{$vo.image}" class="img-responsive" alt="..." >
+									<p>{$vo.name} <br/><span class="index-score-lable">{$vo.douban_rating}</span></p>
+							</a>
+					</li>
+		</foreach>
+	</div>
+	<hr/>
+  <h2>爱情</h2>
+	<div class="index-mv-list  ">
+		<foreach name="movie['aiqing']" item="vo">
+					<li class="col-xs-6 col-md-3">
+							<a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+									<img src="{$vo.image}" class="img-responsive" alt="..." >
+									<p>{$vo.name} <br/><span class="index-score-lable">{$vo.douban_rating}</span></p>
+							</a>
+					</li>
+		</foreach>
+	</div>
+	<hr/>
+  <h2>惊悚</h2>
+	<div class="index-mv-list  ">
+		<foreach name="movie['jingsong']" item="vo">
+					<li class="col-xs-6 col-md-3">
+							<a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+									<img src="{$vo.image}" class="img-responsive" alt="..." >
+									<p>{$vo.name} <br/><span class="index-score-lable">{$vo.douban_rating}</span></p>
+							</a>
+					</li>
+		</foreach>
+	</div>
+	<hr/>
+  <h2>动画</h2>
+	<div class="index-mv-list  ">
+		<foreach name="movie['donghua']" item="vo">
+					<li class="col-xs-6 col-md-3">
+							<a href="{:leuu('article/index',array('id'=>$vo['_id']))}" class="index-mv-thumbnail">
+									<img src="{$vo.image}" class="img-responsive" alt="..." >
+									<p>{$vo.name} <br/><span class="index-score-lable">{$vo.douban_rating}</span></p>
+							</a>
+					</li>
+		</foreach>
+	</div>
+
 <tc_include file="Public:footer"/>
 </div>
 

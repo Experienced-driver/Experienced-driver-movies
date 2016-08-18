@@ -10,143 +10,119 @@
 			#article_content {word-wrap: break-word;}
     		.btn {margin-top: 33px;}
 		</style>
-	</head>
-<body class="">
-<tc_include file="Public:nav" />
-<div class="container tc-main">
-	<div class="row">
-		<div class="span9">
-			
-			<div class="tc-box first-box article-box">
-		    	<h2>{$post_title}</h2>
-		    	<div class="article-infobox">
-		    		<span>{$post_date} by {$user_nicename|default=$user_login}</span>
-		    		<span>
-		    			<a href="javascript:;"><i class="fa fa-eye"></i><span>{$post_hits}</span></a>
-						<a href="{:U('article/do_like',array('id'=>$object_id))}" class="js-count-btn"><i class="fa fa-thumbs-up"></i><span class="count">{$post_like}</span></a>
-						<a href="{:U('user/favorite/do_favorite',array('id'=>$object_id))}" class="js-favorite-btn" data-title="{$post_title}" data-url="{:leuu('article/index',array('id'=>$tid,'cid'=>$term_id))}" data-key="{:sp_get_favorite_key('posts',$object_id)}">
-							<i class="fa fa-star-o"></i>
-						</a>
-					</span>
-		    	</div>
-		    	<hr>
-		    	<div id="article_content">
-		    	{$post_content}
-		    	</div>
-                <if condition="!empty($post_source)">
-                    <div>
-                        <b>注：本文转载自{$post_source}，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责。如有侵权行为，请联系我们，我们会及时删除。</b>
-                    </div>
-    			</if>
-		    	<div>
-					<if condition="!empty($prev)">
-					<a href="{:leuu('article/index',array('id'=>$prev['tid'],'cid'=>$prev['term_id']))}" class="btn btn-primary pull-left">上一篇</a>
-					</if>
-					<if condition="!empty($next)">
-					<a href="{:leuu('article/index',array('id'=>$next['tid'],'cid'=>$next['term_id']))}" class="btn btn-warning pull-right">下一篇</a>
-					</if>
-    	            <script type="text/javascript" src="__TMPL__Public/js/qrcode.min.js"></script>
-                    <div id="qrcode" style="width: 100px;margin:0 auto"></div>
-    					<script type="text/javascript">
-                        var qrcode = new QRCode(document.getElementById("qrcode"), {
-                        width : 100,
-                        height : 100
-                        });
-                        function makeCode () {		
-                        qrcode.makeCode("http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}");
-                        }
-                        makeCode();
-                        </script>
-					<div class="clearfix"></div>
-				</div>
-		    	
-		    	
-		    	{:hook('comment',array(
-		    		'post_id'=>$object_id,
-		    		'post_table'=>'posts',
-		    		'post_title'=>$post_title
-		    	))}
-		    </div>
-		    
-		    <php>$ad=sp_getad("portal_article_bottom");</php>
-			<if condition="!empty($ad)">
-        	<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>赞助商</h2>
-	        	</div>
-	        	<div>
-		        	{$ad}
-		        </div>
-			</div>
-			</if>
-		    
-		</div>
-		<div class="span3">
-			<div class="tc-box first-box">
-				<div class="headtitle">
-	          		<h2>分享</h2>
-	          	</div>
-	          	<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{},"image":{"viewList":["weixin","tsina","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","tsina","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        	</div>
-        	
-        	<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>热门文章</h2>
-	        	</div>
-	        	<div class="ranking">
-	        		<php>
-						$hot_articles=sp_sql_posts("cid:$portal_hot_articles;field:post_title,post_excerpt,tid,smeta,term_id;order:post_hits desc;limit:5;"); 
-					</php>
-		        	<ul class="unstyled">
-		        		<foreach name="hot_articles" item="vo">
-		        			<php>$top=$key<3?"top3":"";</php>
-							<li class="{$top}"><i>{$key+1}</i><a title="{$vo.post_title}" href="{:leuu('article/index',array('id'=>$vo['tid'],'cid'=>$vo['term_id']))}">{$vo.post_title}</a></li>
-						</foreach>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>最新加入</h2>
-	        	</div>
-	        	<php>
-	        	$last_users=sp_get_users("field:*;limit:0,8;order:create_time desc;");
-	        	</php>
-	        	<ul class="list-unstyled tc-photos margin-bottom-30">
-	        		<foreach name="last_users" item="vo">
-                    <li>
-	                    <a href="{:U('user/index/index',array('id'=>$vo['id']))}">
-	                    <img alt="" src="{:U('user/public/avatar',array('id'=>$vo['id']))}">
-	                    </a>
-                    </li>
-                    </foreach>
-                </ul>
-			</div>
-			
-			<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>最新评论</h2>
-	        	</div>
-	        	<div class="comment-ranking">
-	        		<php>$last_comments=sp_get_comments("field:*;limit:0,5;order:createtime desc;");</php>
-	        		<foreach name="last_comments" item="vo">
-	                    <div class="comment-ranking-inner">
-	                        <i class="fa fa-comment"></i>
-	                        <a href="{:U('user/index/index',array('id'=>$vo['uid']))}">{$vo.full_name}:</a>
-	                        <span>{$vo.content}</span>
-	                        <a href="__ROOT__/{$vo.url}#comment{$vo.id}">查看原文</a>
-	                        <span class="comment-time">{:date('m月d日  H:i',strtotime($vo['createtime']))}</span>
-	                    </div>
-                    </foreach>
-                </div>
-			</div>
-        	
-		</div>
+		<script src="__TMPL__/Public/js/jquery.js"></script>
+		<script src="__TMPL__/Public/js/jquery.raty.js"></script>
 		
+	</head>
+<body class="body-white">
+<tc_include file="Public:nav" />
+<tc_include file="Public:script" />
+
+<div class="container">
+
+	<div class="b-2">
+
+	    <h2 id="mv-name">电影名/{$article['article_info'].name}</h2>
+	    <div class="mv-detail-content">
+	        <img src="{$article['article_info'].image}" class="mv-dt-pic"></img>
+	        <div class="clearfix"></div>
+	        <div class="score-demo">
+	            <div id="score-demo"></div>
+	        </div>
+	        <div class="mv-dt-info">
+							<p><label>评分:  </label><span>{$article['article_info'].douban_rating}</span></p>
+	            <p><label>导演： </label><span>{$article['article_info'].directors}</span></p>
+	            <p><label>主演： </label><span>{$article['article_info'].actors}</span></p>
+	            <p><label>分类： </label><span>{$article['article_info'].genres}</span></p>
+	            <p><label>影片长度：</label><span>{$article['article_info'].runtime} minus</span></p>
+	            <p><label>上映时间： </label><span>{$article['article_info'].release_date}</span></p>
+	            <label style="margin-bottom=-5px;float:none">影评简介：</label>
+	                <p class="mv-dt-sim-intor">{$article['article_info'].description}</p>
+									<a href="{:U('user/favorite/do_favorite',array('id'=>$article['article_info']['_id']))}" class="js-favorite-btn" data-title="{$article['article_info'].name}" data-url="{:U('portal/article/index',array('id'=>$article['article_info']['_id']))}" data-key="{:sp_get_favorite_key('posts',$article['article_info']['_id'])}">
+
+										<button class="btn btn-warning">收藏电影</button>
+
+									</a>
+							<br/><br/><br/>
+							<div id="star">
+							</div>
+
+							<div id="hint">
+								<textarea id="hint"></textarea>
+							</div>
+
+
+							<script type="text/javascript">
+								$('#star').raty({
+									path: '__TMPL__/Public/img',
+									click: function(score, evt) {
+    								alert("评分成功!!!\nscore: " + score);
+  								},
+									precision: true,
+									number: 10,
+									target: '#hint',
+									targetType: 'number'
+
+								});
+
+								$('#hint').raty({
+  								target    : '#hint',
+  								targetType: 'number'
+								});
+
+
+							</script>
+
+
+	        </div>
+	    </div>
 	</div>
-              
+	<div class="b-l">
+	    <h3>评论</h3>
+			<form class="form-horizontal comment-form" action="{:U('comment/comment/post')}" method="post">
+	    <div class="mv-dt-com">
+	        <textarea placeholder="输入评论" name="content"></textarea>
+	    </div>
+			<br/><br/>
+	   <button class="btn-inverse" style="float: left">
+	       <span class="icon-pencil"></span>Submit</button>
+
+
+			</form>
+		 <br/>
+	    <h3>其他评论</h3>
+	    <div class="mv-dt-other-com">
+				<foreach name="article['comment']" item="vo">
+	        <li>
+	            <hr></hr>
+							<if condition="empty($article['user_name'])">
+
+									<!--<img src="__TMPL__/Public/images/headicon.png" class="headicon"/>-->
+									<img src="__TMPL__/Public/images/headicon.png" class="headicon"/>
+									<p >这是一段评论这是一段评论这是一段评论这是一段评论
+										  这是一段评论这是一段评论这是一段评论这是一段评论
+											这是一段评论这是一段评论这是一段评论这是一段评论
+											这是一段评论这是一段评论这是一段评论这是一段评论
+											这是一段评论这是一段评论这是一段评论这是一段评论
+											这是一段评论这是一段评论这是一段评论这是一段评论
+									</p>
+									<span class="mv-com-username">Username</span>
+									<span class="mv-com-time">Time:2016-12-11</span>
+							<else/>
+
+								<img src="__UPLOAD__avatar/{$article['user_avatar']}" class="headicon"/>
+	            	<p >{$vo.content}</p>
+	            	<span class="mv-com-username">{$article['user_name']}</span>&nbsp&nbsp
+	            	<span class="mv-com-time">{$vo.com_time}</span>
+
+						  </if>
+	        </li>
+				</foreach>
+	        <a href="#" style="text-align: center; margin-top: 20px;margin-bottom: 20px; display:block;">更多...</a>
+	    </div>
+	</div>
+	<div class="clearfix"></div>
+
 <tc_include file="Public:footer"/>
 </div>
 

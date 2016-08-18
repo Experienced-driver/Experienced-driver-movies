@@ -1,29 +1,23 @@
 {:hook('body_start')}
 <div class="navbar navbar-fixed-top">
-   <div class="navbar-inner">
-     <div class="container">
-       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </a>
-       <a class="brand" href="__ROOT__/"><img src="__TMPL__Public/images/logo.png"/></a>
-       <div class="nav-collapse collapse" id="main-menu">
-       	<?php
-			$effected_id="main-menu";
-		  	$filetpl="<a href='\$href' target='\$target'>\$label</a>";
-		  	$foldertpl="<a href='\$href' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label <b class='caret'></b></a>";
-		  	$ul_class="dropdown-menu" ;
-		  	$li_class="" ;
-		  	$style="nav";
-		  	$showlevel=6;
-		  	$dropdown='dropdown';
-		  	echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
-		?>
-		
-		<ul class="nav pull-right" id="main-menu-user">
-			<li class="dropdown user login">
-	            <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="__ROOT__/"><img src="__TMPL__Public/images/logo.png"></a>
+            <div class="nav-collapse collapse" id="main-menu">
+                <ul id="main-menu" class="nav">
+                    <li class="" id="menu-item-1"><a href="{:leuu('Portal/index/index')}" target="">首页</a></li>
+                    <li class="" id="menu-item-2"><a href="{:leuu('Portal/page/index')}" target="">分类</a></li>
+                    <li class="" id="menu-item-3"><a href="{:leuu('Portal/list/index')}">票房</a></li></ul>
+            </div>
+
+            <ul class="nav pull-right" id="main-menu-user">
+			           <li class="dropdown user login">
+	                <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
 	            <img src="__TMPL__/Public/images/headicon.png" class="headicon"/>
 	            <span class="user-nicename"></span><b class="caret"></b></a>
 	            <ul class="dropdown-menu pull-right">
@@ -44,14 +38,20 @@
 	               <li><a href="{:leuu('user/register/index')}"><i class="fa fa-user"></i> &nbsp;注册</a></li>
 	            </ul>
           	</li>
-		</ul>
-		<div class="pull-right">
-        	<form method="post" class="form-inline" action="{:U('portal/search/index')}" style="margin:18px 0;">
-				 <input type="text" class="" placeholder="Search" name="keyword" value="{:I('get.keyword')}"/>
-				 <input type="submit" class="btn btn-info" value="Go" style="margin:0"/>
-			</form>
-		</div>
-       </div>
-     </div>
-   </div>
- </div>
+		      </ul>
+            <if condition="empty($list['user_avatar'])">
+
+              <else/>
+
+              <div class="pull-right">
+              <form method="post" class="index-search form-inline" action="{:U('portal/search/index')}">
+                  <input type="text" class="in-se-box" placeholder="Search" name="keyword" value="{:I('get.keyword')}">
+                  <input type="submit" class="btn btn-info" value="Search" style="margin:0">
+              </form>
+              </div>
+
+            </if>
+
+        </div>
+    </div>
+</div>

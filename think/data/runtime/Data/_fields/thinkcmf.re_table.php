@@ -1,0 +1,1 @@
+a:6:{i:0;s:7:"user_id";i:1;s:7:"item_id";i:2;s:9:"re_rating";i:3;s:7:"ranking";s:3:"_pk";a:2:{i:0;s:7:"user_id";i:1;s:7:"item_id";}s:5:"_type";a:4:{s:7:"user_id";s:7:"int(11)";s:7:"item_id";s:7:"int(11)";s:9:"re_rating";s:6:"double";s:7:"ranking";s:7:"int(11)";}}
